@@ -150,7 +150,7 @@
 }
 @article{deniet2007tps,
   title={{Two preconditioners for saddle point problems in fluid flows}},
-  author={de Niet, AC and Wubs, FW},
+  author={de Niet, A.C. and Wubs, F.W.},
   journal={Int. J. Numer. Meth. Fluids},
   volume={54},
   pages={355--377},
@@ -163,17 +163,23 @@
   publisher={Imperial College Press}
 }
 @Misc{petsc-web-page,
-  Author = "Satish Balay and Jed Brown and Kris Buschelman and William D. Gropp and Dinesh Kaushik and Matthew G. Knepley and Lois Curfman McInnes and Barry F. Smith and Hong Zhang",
- Title      = "{PETSc} {W}eb page",
- Note     = "\href{http://mcs.anl.gov}{url{mcs.anl.gov/petsc}}",
- Year     = "2010"
+  author =	 {Satish Balay and Jed Brown and Kris Buschelman and Victor Eijkhout
+                  and William~D. Gropp and Dinesh Kaushik and
+                  Matthew~G. Knepley and Lois Curfman McInnes and
+                  Barry~F. Smith and Hong Zhang},
+  title =	 {{PETS}c {W}eb page},
+  url =		 {http://mcs.anl.gov/petsc},
+  howpublished = {\href{http://mcs.anl.gov}{\url{mcs.anl.gov/petsc}}},
+  year = {2011}
 }
 @TechReport{petsc-user-ref,
-  Author      = "Satish Balay and Kris Buschelman and Victor Eijkhout and William D. Gropp and Dinesh Kaushik and Matthew G. Knepley and Lois Curfman McInnes and Barry F. Smith and Hong Zhang",
-  Title              = "{PETS}c Users Manual",
-  Number      = "ANL-95/11 - Revision 3.0.0",
-  Institution = "Argonne National Laboratory",
-  Year              = "2008"
+  author = {Satish Balay and Jed Brown and Kris Buschelman and Victor Eijkhout and William~D. Gropp and Dinesh Kaushik and Matthew~G. Knepley and
+            Lois Curfman McInnes and Barry~F. Smith and Hong Zhang},
+  title  = {{PETS}c Users Manual},
+  institution = {Argonne National Laboratory},
+  year   = 2010,
+  number = {ANL-95/11 - Revision 3.1},
+  url    = {http://www.mcs.anl.gov/petsc/docs}
 }
 @InProceedings{petsc-efficient,
   Author     = "Satish Balay and William D. Gropp and Lois Curfman McInnes and Barry F. Smith",
@@ -214,7 +220,7 @@
 }
 @article{hindmarsh2004numerical,
   title={{A numerical comparison of approximations to the Stokes equations used in ice sheet and glacier modeling}},
-  author={Hindmarsh, RCA},
+  author={Hindmarsh, R.C.A.},
   journal={Journal of Geophysical Research},
   volume={109},
   number={F1},
@@ -231,7 +237,7 @@
 }
 @article{knoll2004jfn,
   title={{Jacobian-free Newton--Krylov methods: a survey of approaches and applications}},
-  author={Knoll, DA and Keyes, DE},
+  author={Knoll, D.A. and Keyes, D.E.},
   journal={Journal of Computational Physics},
   volume={193},
   number={2},
@@ -557,13 +563,13 @@
 }
 @article{keyes1999sdd,
   title={{How scalable is domain decomposition in practice}},
-  author={Keyes, DE},
+  author={Keyes, D.E.},
   journal={Proceedings of the 11th International Conference on Domain Decomposition Methods. Domain Decomposition Press, Bergen},
   year={1999}
 }
 @article{dohrmann2006pbp,
   title={{A primal based penalty preconditioner for elliptic saddle point systems}},
-  author={Dohrmann, CR and Lehoucq, RB},
+  author={Dohrmann, C.R. and Lehoucq, R.B.},
   journal={SIAM Journal on Numerical Analysis},
   volume={44},
   number={1},
@@ -607,13 +613,16 @@
   year={2007},
   publisher={Springer}
 }
-@article{klawonn2007ifd,
-  title={{Inexact FETI-DP Methods}},
-  author={Klawonn, A.},
-  journal={Int. J. Numer. Meth. Engng},
+@article{klawonn2007inexact,
+  title={{Inexact FETI-DP methods}},
+  author={Klawonn, A. and Rheinbach, O.},
+  journal={International Journal for Numerical Methods in Engineering},
   volume={69},
+  number={2},
   pages={284--307},
-  year={2007}
+  issn={1097-0207},
+  year={2007},
+  publisher={Wiley Online Library}
 }
 @article{biros2005pln1,
   title={{Parallel Lagrange-Newton-Krylov-Schur methods for PDE constrained optimization. Part I: The Krylov-Schur solver}},
@@ -681,7 +690,7 @@
   pages={57--90},
   year={2001}
 }
-@article{li2006bai,
+@article{li2006bddc,
   title={{BDDC algorithms for incompressible Stokes equations}},
   author={Li, J. and Widlund, O.B.},
   journal={SIAM Journal on Numerical Analysis},
@@ -1383,7 +1392,7 @@ year={2008}
 }
 @article{patankar1972cph,
   title={{A calculation procedure for heat, mass and momentum transfer in three-dimensional parabolic flows}},
-  author={Patankar, SV and Spalding, DB},
+  author={Patankar, S.V. and Spalding, D.B.},
   journal={Int. J. Heat Mass Transfer},
   volume={15},
   pages={1787--1806},
@@ -1475,7 +1484,7 @@ year={2008}
 }
 @article{mousseau2002inc,
   title={{An implicit nonlinearly consistent method for the two-dimensional shallow-water equations with Coriolis force}},
-  author={Mousseau, VA and Knoll, DA and Reisner, JM},
+  author={Mousseau, V.A. and Knoll, D.A. and Reisner, J.M.},
   journal={Monthly Weather Review},
   volume={130},
   number={11},
@@ -1485,7 +1494,7 @@ year={2008}
 }
 @article{knoll2003bat,
   title={{On balanced approximations for time integration of multiple time scale systems}},
-  author={Knoll, DA and Chacon, L. and Margolin, LG and Mousseau, VA},
+  author={Knoll, D.A. and Chacon, L. and Margolin, L.G. and Mousseau, V.A.},
   journal={Journal of Computational Physics},
   volume={185},
   number={2},
@@ -1648,8 +1657,8 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   publisher={American Geophysical Union}
 }
 @article{flowers2005sensitivity,
-  title={{Sensitivity of Vatnaj{\\"o}kull ice cap hydrology and dynamics to climate warming over the next 2 centuries}},
-  author={Flowers, G.E. and Marshall, S.J. and Bj{\\"o}rnsson, H. and Clarke, G.K.C.},
+  title={{Sensitivity of Vatnaj{\"o}kull ice cap hydrology and dynamics to climate warming over the next 2 centuries}},
+  author={Flowers, G.E. and Marshall, S.J. and Bj{\"o}rnsson, H. and Clarke, G.K.C.},
   journal={Journal of Geophysical Research},
   volume={110},
   number={F2},
@@ -2003,8 +2012,10 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   journal={Communications on Pure and Applied Mathematics},
   volume={59},
   number={11},
+  pages={1523--1572},
+  issn={1097-0312},
   year={2006},
-  publisher={Wiley Subscription Services, Inc., A Wiley Company Hoboken}
+  publisher={Wiley Online Library}
 }
 @article{butcher2006general,
   title={{General linear methods}},
@@ -2072,10 +2083,12 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={2002}
 }
 @article{elman2009boundary,
-  title={{Boundary Conditions in Approximate Commutator Preconditioners for the Navier-Stokes Equations}},
-  author={Elman, H.C. and Tuminaro, R.S.},
-  year={2009},
-  publisher={UMIACS}
+  title={{Boundary conditions in approximate commutator preconditioners for the Navier-Stokes equations}},
+  author={Elman, H.C. and TUMINARO, R.},
+  journal={Electronic Transactions on Numerical Analysis},
+  volume={35},
+  pages={257--280},
+  year={2009}
 }
 @article{park2008jacobian,
   title={{Jacobian-free Newton Krylov discontinuous Galerkin method and physics-based preconditioning for nuclear reactor simulations}},
@@ -2183,16 +2196,6 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   pages={415},
   year={2007},
   publisher={Springer}
-}
-@article{li2006bddc,
-  title={{BDDC algorithms for incompressible Stokes equations}},
-  author={Li, J. and Widlund, O.},
-  journal={SIAM Journal on Numerical Analysis},
-  volume={44},
-  number={6},
-  pages={2432--2455},
-  year={2006},
-  publisher={Citeseer}
 }
 @book{toselli2005domain,
   title={{Domain decomposition methods--algorithms and theory}},
@@ -2427,7 +2430,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{iverson1998ring,
   title={{Ring-shear studies of till deformation: Coulomb-plastic behavior and distributed strain in glacier beds}},
-  author={Iverson, NR and Hooyer, TS and Baker, RW},
+  author={Iverson, N.R. and Hooyer, T.S. and Baker, R.W.},
   journal={Journal of Glaciology},
   volume={44},
   number={148},
@@ -2479,7 +2482,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{rice1968path,
   title={{A path independent integral and the approximate analysis of strain concentration by notches and cracks}},
-  author={Rice, JR},
+  author={Rice, J.R.},
   journal={Journal of applied mechanics},
   volume={35},
   number={2},
@@ -2533,7 +2536,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{rice1968plane,
   title={{Plane strain deformation near a crack tip in a power-law hardening material}},
-  author={Rice, JR and Rosengren, GF},
+  author={Rice, J.R. and Rosengren, G.F.},
   journal={Journal of the Mechanics and Physics of Solids},
   volume={16},
   number={1},
@@ -2544,7 +2547,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{hutchinson1968singular,
   title={{Singular behaviour at the end of a tensile crack in a hardening material}},
-  author={Hutchinson, JW},
+  author={Hutchinson, J.W.},
   journal={Journal of the Mechanics and Physics of Solids},
   volume={16},
   number={1},
@@ -2562,7 +2565,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{jacobson1998thermal,
   title={{Thermal effects on the location of ice stream margins}},
-  author={Jacobson, HP and Raymond, CF},
+  author={Jacobson, H.P. and Raymond, C.F.},
   journal={Journal of Geophysical Research},
   volume={103},
   number={B6},
@@ -2573,7 +2576,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{raymond2000energy,
   title={{Energy balance of ice streams}},
-  author={Raymond, CF},
+  author={Raymond, C.F.},
   journal={Journal of Glaciology},
   volume={46},
   number={155},
@@ -2618,7 +2621,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{davies1988reentrant,
   title={{Reentrant corner singularities in non-Newtonian flow. Part I: Theory}},
-  author={Davies, AR},
+  author={Davies, A.R.},
   journal={Journal of Non-Newtonian Fluid Mechanics},
   volume={29},
   pages={269--293},
@@ -2628,7 +2631,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{lipscomb1987implications,
   title={{Implications of boundary singularities in complex geometries}},
-  author={Lipscomb, GG and Keunings, R. and Denn, MM},
+  author={Lipscomb, G.G. and Keunings, R. and Denn, M.M.},
   journal={Journal of Non-Newtonian Fluid Mechanics},
   volume={24},
   number={1},
@@ -2639,7 +2642,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{hinch1993flow,
   title={{The flow of an Oldroyd fluid around a sharp corner}},
-  author={Hinch, EJ},
+  author={Hinch, E.J.},
   journal={Journal of Non-Newtonian Fluid Mechanics},
   volume={50},
   number={2-3},
@@ -2650,7 +2653,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{hughes2005isogeometric,
   title={{Isogeometric analysis: CAD, finite elements, NURBS, exact geometry and mesh refinement}},
-  author={Hughes, TJR and Cottrell, JA and Bazilevs, Y.},
+  author={Hughes, T.J.R. and Cottrell, J.A. and Bazilevs, Y.},
   journal={Computer methods in applied mechanics and engineering},
   volume={194},
   number={39-41},
@@ -2766,4 +2769,522 @@ a Higher-Order Glaciologial Flow Model},
   journal={Continuum Mechanics and Applications in Geophysics and the Environment},
   pages={201--221},
   year={2001}
+}
+@article{ipsen2001note,
+  title={{A Note on Preconditioning Nonsymmetric Matrices}},
+  author={Ipsen, I.C.F.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={23},
+  pages={1050},
+  year={2001}
+}
+@article{cao2002moving,
+  title={{A Moving Mesh Method Based on the Geometric Conservation Law}},
+  author={Cao, W. and Huang, W. and Russell, R.D.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={24},
+  pages={118},
+  year={2002}
+}
+@article{brown2011tmeice,
+  title={Achieving textbook multigrid efficiency for hydrostatic ice flow},
+  author={Jed Brown and Barry F Smith and Aron Ahmadia},
+  journal={Journal of Geophysical Research - Earth Surfaces},
+  year={2011, \emph{submitted}}
+}
+@techreport{mishra2010sparse,
+  title =        {Sparse tensor multi-level Monte Carlo finite volume
+                  methods for hyperbolic conservation laws with random
+                  intitial data},
+  institution =  {ETH Z\"urich},
+  author =       {S. Mishra and C Schwab},
+  month =        September,
+  year =         2010,
+  number =       {2010-24},
+},
+@techreport{mishra2011mlmcfvm,
+  title =        {Multi-level Monte Carlo finite volume methods for
+                  nonlinear systems of conservation laws in
+                  multi-dimensions},
+  institution =  {ETH Z\"urich},
+  author =       {S Mishra and C Schwab and J \v{S}ukys},
+  month =        January,
+  year =         2011,
+  number =       {2011-02},
+}
+@techreport{barth2010mlmcfe,
+  title =        {{Multi-Level Monte Carlo Finite Element method for
+                  elliptic PDE's with stochastic coefficients}},
+  institution =  {ETH Z\"urich},
+  author =       {Andrea Barth and Christoph Schwab and Nathaniel Zollinger},
+  month =        June,
+  year =         2010,
+  number =       {2010-18},
+}
+@article{young1954iterative,
+  title={{Iterative Methods for Solving Partial Difference Equations of Elliptic Type}},
+  author={Young, D.},
+  journal={Transactions of the American Mathematical Society},
+  pages={92--111},
+  issn={0002-9947},
+  year={1954},
+  publisher={JSTOR}
+}
+@book{hackbusch1985multi,
+  title={{Multi-grid methods and applications}},
+  author={Hackbusch, W.},
+  isbn={3540127615},
+  issn={0179-3632},
+  year={1985},
+  publisher={Springer Verlag}
+}
+@book{trottenberg2001multigrid,
+  title={{Multigrid}},
+  author={Trottenberg, U. and Oosterlee, C.W. and Sch{\"u}ller, A.},
+  isbn={012701070X},
+  year={2001},
+  publisher={Academic Pr}
+}
+@article{hestenes1952methods,
+  title={{Methods of conjugate gradients for solving linear systems}},
+  author={Hestenes, M.R. and Stiefel, E.},
+  journal={Journal cf Research of the National Bureau of Standards Vol},
+  volume={49},
+  number={6},
+  year={1952}
+}
+@article{saad1986gmres,
+  title={{GMRES: A generalized minimal residual algorithm for solving nonsymmetric linear systems.}},
+  author={Saad, Y. and Schultz, M.H.},
+  journal={SIAM J. Sci. Stat. Comput.},
+  volume={7},
+  number={3},
+  pages={856--869},
+  year={1986}
+}
+@article{frankel1950convergence,
+  title={{Convergence Rates of Iterative Treatments of Partial Differential Equations}},
+  author={Frankel, S.P.},
+  journal={Mathematical Tables and Other Aids to Computation},
+  volume={4},
+  number={30},
+  pages={65--75},
+  issn={0891-6837},
+  year={1950},
+  publisher={JSTOR}
+}
+@article{richardson1911approximate,
+  title={{The approximate arithmetical solution by finite differences of physical problems involving differential equations, with an application to the stresses in a masonry dam}},
+  author={Richardson, L.F.},
+  journal={Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character},
+  volume={210},
+  pages={307--357},
+  issn={0264-3952},
+  year={1911},
+  publisher={JSTOR}
+}
+@book{saad2003iterative,
+  title={{Iterative methods for sparse linear systems}},
+  author={Saad, Y.},
+  isbn={0898715342},
+  year={2003},
+  edition={3rd},
+  publisher={Society for Industrial Mathematics}
+}
+@article{osei2010preconditioning,
+  title={{Preconditioning Helmholtz linear systems}},
+  author={Osei-Kuffuor, D. and Saad, Y.},
+  journal={Applied numerical mathematics},
+  volume={60},
+  number={4},
+  pages={420--431},
+  issn={0168-9274},
+  year={2010},
+  publisher={Elsevier}
+}
+@article{oosterlee2010shifted,
+  title={{Shifted-Laplacian preconditioners for heterogeneous Helmholtz problems}},
+  author={Oosterlee, CW and Vuik, C. and Mulder, WA and Plessix, R.E.},
+  journal={Advanced Computational Methods in Science and Engineering},
+  pages={21--46},
+  year={2010},
+  publisher={Springer}
+}
+@article{brezzi1991mixed,
+  title={{Mixed and hybrid finite element methods}},
+  author={Brezzi, F. and Fortin, M.},
+  journal={Springer Series In Computational Mathematics; Vol. 15},
+  pages={350},
+  isbn={0387975829},
+  year={1991}
+}
+@article{hughes1986new,
+  title={{A new finite element formulation for computational fluid dynamics: V. Circumventing the Babuska-Brezzi condition: A stable Petrov-Galerkin formulation of the Stokes problem accommodating equal-order interpolations}},
+  author={Hughes, T.J.R. and Franca, L.P. and Balestra, M.},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={59},
+  number={1},
+  pages={85--99},
+  issn={0045-7825},
+  year={1986},
+  publisher={Elsevier}
+}
+@article{dohrmann2004stabilized,
+  title={{A stabilized finite element method for the Stokes problem based on polynomial pressure projections}},
+  author={Dohrmann, C.R. and Bochev, P.B.},
+  journal={International Journal for Numerical Methods in Fluids},
+  volume={46},
+  number={2},
+  pages={183--201},
+  issn={1097-0363},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+@article{walkley2004calculation,
+  title={{On the calculation of normals in free-surface flow problems}},
+  author={Walkley, M.A. and Gaskell, P.H. and Jimack, P.K. and Kelmanson, M.A. and Summers, J.L. and Wilson, M.C.T.},
+  journal={Communications in numerical methods in engineering},
+  volume={20},
+  number={5},
+  pages={343--351},
+  issn={1099-0887},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+@article{hughes2000continuous,
+  title={{The continuous Galerkin method is locally conservative}},
+  author={Hughes, T.J.R. and Engel, G. and Mazzei, L. and Larson, M.G.},
+  journal={Journal of Computational Physics},
+  volume={163},
+  number={2},
+  pages={467--488},
+  issn={0021-9991},
+  year={2000},
+  publisher={Elsevier}
+}
+@article{hughes2006multiscale,
+  title={{A multiscale discontinuous Galerkin method with the computational structure of a continuous Galerkin method}},
+  author={Hughes, T.J.R. and Scovazzi, G. and Bochev, P.B. and Buffa, A.},
+  journal={Computer methods in applied mechanics and engineering},
+  volume={195},
+  number={19-22},
+  pages={2761--2787},
+  issn={0045-7825},
+  year={2006},
+  publisher={Elsevier}
+}
+@article{lynch1980finite,
+  title={{Finite element simulation of flow in deforming regions}},
+  author={Lynch, D.R. and Gray, W.G.},
+  journal={Journal of Computational Physics},
+  volume={36},
+  number={2},
+  pages={135--153},
+  issn={0021-9991},
+  year={1980},
+  publisher={Elsevier}
+}
+@article{dohrmann2010hybrid,
+  title={{Hybrid domain decomposition algorithms for compressible and almost incompressible elasticity}},
+  author={Dohrmann, C.R. and Widlund, O.B.},
+  journal={International Journal for Numerical Methods in Engineering},
+  volume={82},
+  number={2},
+  pages={157--183},
+  issn={1097-0207},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+@article{klawonn2007robust,
+  title={{Robust FETI-DP methods for heterogeneous three dimensional elasticity problems}},
+  author={Klawonn, A. and Rheinbach, O.},
+  journal={Computer methods in applied mechanics and engineering},
+  volume={196},
+  number={8},
+  pages={1400--1414},
+  issn={0045-7825},
+  year={2007},
+  publisher={Elsevier}
+}
+@article{akkerman2010isogeometric,
+  title={{Isogeometric analysis of free-surface flow}},
+  author={Akkerman, I. and Bazilevs, Y. and Kees, C.E. and Farthing, M.W.},
+  journal={Journal of Computational Physics},
+  issn={0021-9991},
+  year={2010},
+  publisher={Elsevier}
+}
+@article{estep2008posteriori,
+  title={{An a posteriori-a priori analysis of multiscale operator splitting}},
+  author={Estep, D. and Ginting, V. and Ropp, D. and Shadid, J.N. and Tavener, S.},
+  journal={SIAM Journal on Numerical Analysis},
+  volume={46},
+  number={3},
+  pages={1116--1146},
+  issn={0036-1429},
+  year={2008},
+  publisher={Citeseer}
+}
+@article{jardin20081d,
+  title={{On 1D diffusion problems with a gradient-dependent diffusion coefficient}},
+  author={Jardin, S.C. and Bateman, G. and Hammett, G.W. and Ku, L.P.},
+  journal={Journal of Computational Physics},
+  volume={227},
+  number={20},
+  pages={8769--8775},
+  issn={0021-9991},
+  year={2008},
+  publisher={Academic Press}
+}
+@article{rannacher2000finite,
+  title={{Finite Element Methods for the Incompressible Navier-Stokes Equations}},
+  author={Rannacher, R.},
+  journal={Fundamental directions in mathematical fluid mechanics},
+  pages={191},
+  isbn={3764364149},
+  year={2000},
+  publisher={Birkhauser}
+}
+@article{jameson2001many,
+  title={{How many steps are required to solve the Euler equations of steady, compressible flow: in search of a fast solution algorithm}},
+  author={Jameson, A. and Caughey, D.A.},
+  journal={AIAA paper},
+  volume={2673},
+  pages={2001},
+  year={2001},
+  publisher={Citeseer}
+}
+@article{adams2010toward,
+  title={{Toward textbook multigrid efficiency for fully implicit resistive magnetohydrodynamics}},
+  author={Adams, M.F. and Samtaney, R. and Brandt, A.},
+  journal={Journal of Computational Physics},
+  volume={229},
+  number={18},
+  pages={6208--6219},
+  issn={0021-9991},
+  year={2010},
+  publisher={Elsevier}
+}
+@article{brandt1979multigrid,
+  title={{Multigrid solutions to elliptic flow problems}},
+  author={Brandt, A. and Dinar, N.},
+  journal={Numerical methods for partial differential equations},
+  pages={53--147},
+  year={1979}
+}
+@article{vanka1986block,
+  title={{Block-implicit multigrid solution of Navier-Stokes equations in primitive variables}},
+  author={Vanka, S.P.},
+  journal={Journal of Computational Physics},
+  volume={65},
+  number={1},
+  pages={138--158},
+  issn={0021-9991},
+  year={1986},
+  publisher={Elsevier}
+}
+@conference{chacon2008scalable,
+  title={{Scalable parallel implicit solvers for 3D magnetohydrodynamics}},
+  author={Chac{\'o}n, L.},
+  booktitle={Journal of Physics: Conference Series},
+  volume={125},
+  pages={012041},
+  year={2008},
+  organization={IOP Publishing}
+}
+@article{chacon2008optimal,
+  title={{An optimal, parallel, fully implicit Newton--Krylov solver for three-dimensional viscoresistive magnetohydrodynamics}},
+  author={Chac{\'o}n, L.},
+  journal={Physics of Plasmas},
+  volume={15},
+  pages={056103},
+  year={2008}
+}
+@article{park2009physics,
+  title={{On physics-based preconditioning of the Navier-Stokes equations}},
+  author={Park, H.K. and Nourgaliev, R.R. and Martineau, R.C. and Knoll, D.A.},
+  journal={Journal of Computational Physics},
+  volume={228},
+  number={24},
+  pages={9131--9146},
+  issn={0021-9991},
+  year={2009},
+  publisher={Elsevier}
+}
+@article{olshanskii2006analysis,
+  title={{Analysis of a Stokes interface problem}},
+  author={Olshanskii, M.A. and Reusken, A.},
+  journal={Numerische Mathematik},
+  volume={103},
+  number={1},
+  pages={129--149},
+  issn={0029-599X},
+  year={2006},
+  publisher={Springer}
+}
+@article{olshanskii2006uniform,
+  title={{Uniform preconditioners for a parameter dependent saddle point problem with application to generalized Stokes interface equations}},
+  author={Olshanskii, M.A. and Peters, J. and Reusken, A.},
+  journal={Numerische Mathematik},
+  volume={105},
+  number={1},
+  pages={159--191},
+  issn={0029-599X},
+  year={2006},
+  publisher={Springer}
+}
+@conference{olshanskii2004stokes,
+  title={{A Stokes interface problem: stability, error estimates and a solver}},
+  author={Olshanskii, MA and Reusken, A.},
+  booktitle={Proc. of European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS},
+  volume={2004},
+  year={2004}
+}
+@article{larin2008comparative,
+  title={{A comparative study of efficient iterative solvers for generalized Stokes equations}},
+  author={Larin, M. and Reusken, A.},
+  journal={Numerical Linear Algebra with Applications},
+  volume={15},
+  number={1},
+  pages={13--34},
+  issn={1099-1506},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+@article{mardal2004uniform,
+  title={{Uniform preconditioners for the time dependent Stokes problem}},
+  author={Mardal, K.A. and Winther, R.},
+  journal={Numerische Mathematik},
+  volume={98},
+  number={2},
+  pages={305--327},
+  issn={0029-599X},
+  year={2004},
+  publisher={Springer}
+}
+@article{silvester2001efficient,
+  title={{Efficient preconditioning of the linearized Navier-Stokes equations for incompressible flow}},
+  author={Silvester, D. and Elman, H. and Kay, D. and Wathen, A.},
+  journal={Journal of Computational and Applied Mathematics},
+  volume={128},
+  number={1-2},
+  pages={261--279},
+  issn={0377-0427},
+  year={2001},
+  publisher={Elsevier}
+}
+@article{elman1999bfbt,
+  title={{Preconditioning for the steady-state Navier-Stokes equations with low viscosity}},
+  author={Elman, H.C.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={20},
+  number={4},
+  pages={1299--1316},
+  issn={1064-8275},
+  year={1999},
+  publisher={Citeseer}
+}
+@article{grote1997parallel,
+  title={{Parallel preconditioning with sparse approximate inverses}},
+  author={Grote, M.J. and Huckle, T.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={18},
+  number={3},
+  pages={838--853},
+  issn={1064-8275},
+  year={1997},
+  publisher={Citeseer}
+}
+@article{awanou2005convergence,
+  title={{On convergence rate of the augmented Lagrangian algorithm for nonsymmetric saddle point problems}},
+  author={Awanou, GM and Lai, MJ},
+  journal={Applied numerical mathematics},
+  volume={54},
+  number={2},
+  pages={122--134},
+  issn={0168-9274},
+  year={2005},
+  publisher={Elsevier}
+}
+@article{farhat2001feti,
+  title={{FETI-DP: a dual--primal unified FETI method—part I: A faster alternative to the two-level FETI method}},
+  author={Farhat, C. and Lesoinne, M. and LeTallec, P. and Pierson, K. and Rixen, D.},
+  journal={International Journal for Numerical Methods in Engineering},
+  volume={50},
+  number={7},
+  pages={1523--1544},
+  issn={1097-0207},
+  year={2001},
+  publisher={Wiley Online Library}
+}
+@article{farhat2000scalable,
+  title={{A scalable dual-primal domain decomposition method}},
+  author={Farhat, C. and Lesoinne, M. and Pierson, K.},
+  journal={Numerical linear algebra with applications},
+  volume={7},
+  number={7-8},
+  pages={687--714},
+  issn={1099-1506},
+  year={2000},
+  publisher={Wiley Online Library}
+}
+@article{smith2010sparse,
+  title={{Sparse triangular solves for ILU revisited: data layout crucial to better performance}},
+  author={Smith, B. and Zhang, H.},
+  journal={International Journal of High Performance Computing Applications},
+  issn={1094-3420},
+  year={2010},
+  publisher={SAGE Publications}
+}
+@article{fog2011michoarchitecture,
+  title={{The microarchitecture of Intel and AMD CPU’s: An optimization guide for assembly programmers and compiler makers}},
+  author={Fog, A.},
+  journal={Copenhagen University College of Engineering},
+  year={2011}
+}
+@article{fog2011instruction,
+  title={{Instruction tables: Lists of instruction latencies, throughputs and microoperation breakdowns for Intel, AMD and VIA CPUs}},
+  author={Fog, A.},
+  journal={Copenhagen University College of Engineering},
+  year={2011}
+}
+@book{intel2011optimization,
+  title={{Intel 64 and IA-32 Architectures Optimization Reference Manual}},
+  author={Intel},
+  year={2011},
+  number={248966-024},
+  publisher={Intel},
+  url={http://www.intel.com/Assets/PDF/manual/248966.pdf}
+}
+@book{amd2009optimization,
+  title={{Software Optimization Guide for AMD Family 10h and 12h Processors}},
+  author={AMD},
+  number={40546-3.13},
+  year=2011,
+  publisher={Advanced Micro Devices}
+}
+@article{drepper2007memory,
+  title={{What every programmer should know about memory}},
+  author={Drepper, U.},
+  journal={Linux Weekly News},
+  url={http://people.redhat.com/drepper/cpumemory.pdf},
+  year={2007},
+}
+@conference{cuthill1969reducing,
+  title={{Reducing the bandwidth of sparse symmetric matrices}},
+  author={Cuthill, E. and McKee, J.},
+  booktitle={Proceedings of the 1969 24th national conference},
+  pages={157--172},
+  year={1969},
+  organization={ACM}
+}
+@techreport{mccalpin2007stream,
+  author = {John D. McCalpin},
+  title = {STREAM: Sustainable Memory Bandwidth in High Performance Computers},
+  institution = {University of Virginia},
+  year = {1991-2007},
+  address = {Charlottesville, Virginia},
+  note = {A continually updated technical report.
+http://www.cs.virginia.edu/stream/},
+  url = {http://www.cs.virginia.edu/stream/}
 }
