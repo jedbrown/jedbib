@@ -309,15 +309,6 @@
   year={2003},
   publisher={Society for Industrial and Applied Mathematics Philadelphia, PA, USA}
 }
-@article{nachtigal1992fnm,
-  title={How Fast are Nonsymmetric Matrix Iterations?},
-  author={Nachtigal, N.M. and Reddy, S.C. and Trefethen, L.N.},
-  journal={SIAM Journal on Matrix Analysis and Applications},
-  volume={13},
-  pages={778},
-  year={1992},
-  publisher={SIAM}
-}
 @article{saad2000isl,
   title={{Iterative solution of linear systems in the 20th century}},
   author={Saad, Y. and van der Vorst, H.A.},
@@ -805,6 +796,7 @@
   author={Bueler, E. and Brown, J. and Lingle, C.},
   journal={J. Glaciol},
   volume={53},
+  number={182},
   pages={499--516},
   year={2007}
 }
@@ -813,6 +805,7 @@
   author={Bueler, E. and Lingle, C.S. and Brown, J.},
   journal={Ann. Glaciol},
   volume={46},
+  number=1,
   pages={97--105},
   year={2007}
 }
@@ -1515,7 +1508,7 @@ year={2008}
   publisher={American Geophysical Union}
 }
 @article{bueler2009shallow,
-  title={{Shallow shelf approximation as a “sliding law” in a thermomechanically coupled ice sheet model}},
+  title={{Shallow shelf approximation as a ``sliding law'' in a thermomechanically coupled ice sheet model}},
   author={Bueler, E. and Brown, J.},
   journal={Journal of Geophysical Research-Earth Surface},
   volume={114},
@@ -1867,16 +1860,6 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={1994},
   institution={Sandia National Labs., Albuquerque, NM. Cubit Development Team.}
 }
-@article{murphy2000npi,
-  title={{A note on preconditioning for indefinite linear systems}},
-  author={Murphy, M.F. and Golub, G.H. and Wathen, A.J.},
-  journal={SIAM Journal on Scientific Computing},
-  volume={21},
-  number={6},
-  pages={1969--1972},
-  year={2000},
-  publisher={Philadelphia, PA: SIAM, c1993-}
-}
 @article{baker2005tac,
   title={{A technique for accelerating the convergence of restarted GMRES}},
   author={Baker, AH and Jessup, ER and Manteuffel, T.},
@@ -2170,14 +2153,6 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   journal={Los Alamos Unclassified Report LA-UR-02-2484},
   year={2002}
 }
-@article{elman2009boundary,
-  title={{Boundary conditions in approximate commutator preconditioners for the Navier-Stokes equations}},
-  author={Elman, H.C. and Tuminaro, R.},
-  journal={Electronic Transactions on Numerical Analysis},
-  volume={35},
-  pages={257--280},
-  year={2009}
-}
 @article{park2008jacobian,
   title={{Jacobian-free Newton Krylov discontinuous Galerkin method and physics-based preconditioning for nuclear reactor simulations}},
   author={Park, H.K. and Nourgaliev, R.R. and Martineau, R.C. and Knoll, D.A.},
@@ -2407,7 +2382,7 @@ booktitle = {Numerical Methods in Fluid Dynamics},
 }
 @article{amundson2010ice,
   title={{Ice m{\'e}lange dynamics and implications for terminus stability, Jakobshavn Isbr{\ae}, Greenland}},
-  author={Amundson, JM and Fahnestock, M. and Truffer, M. and Brown, J. and L{\"u}thi, MP and Motyka, RJ},
+  author={Jason M. Amundson and Mark Fahnestock and Martin Truffer and Jed Brown and Martin P. L{\"u}thi and Roman J. Motyka},
   journal={J. Geophys. Res},
   volume={115},
   pages={F01005},
@@ -2872,14 +2847,6 @@ a Higher-Order Glaciologial Flow Model},
   year={2001},
   abstract={A quote: ``There is a malaise afoot which consists of believing that if a numerical solution `looks' all right, it is. A discontinuous velocity is simply nonsense.''}
 }
-@article{ipsen2001note,
-  title={A Note on Preconditioning Nonsymmetric Matrices},
-  author={Ipsen, I.C.F.},
-  journal={SIAM Journal on Scientific Computing},
-  volume={23},
-  pages={1050},
-  year={2001}
-}
 @article{cao2002moving,
   title={{A Moving Mesh Method Based on the Geometric Conservation Law}},
   author={Cao, W. and Huang, W. and Russell, R.D.},
@@ -2890,7 +2857,7 @@ a Higher-Order Glaciologial Flow Model},
 }
 @article{brown2011tmeice,
   title={Achieving textbook multigrid efficiency for hydrostatic ice flow},
-  author={Jed Brown and Barry F Smith and Aron Ahmadia},
+  author={Jed Brown and Barry F. Smith and Aron Ahmadia},
   journal={SIAM Journal on Scientific Computing},
   year={\emph{submitted} 2011}
 }
@@ -2901,6 +2868,24 @@ a Higher-Order Glaciologial Flow Model},
   volume={accepted},
   pages={--},
   year={2012}
+}
+@article{mishra2012mlmcfvm,
+title = "Multi-level Monte Carlo finite volume methods for nonlinear systems of conservation laws in multi-dimensions",
+journal = "Journal of Computational Physics",
+volume = 231,
+number = 8,
+pages = "3365 - 3388",
+year = 2012,
+issn = "0021-9991",
+doi = "10.1016/j.jcp.2012.01.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999112000320",
+author = "S. Mishra and Ch. Schwab and J. Šukys",
+keywords = "Conservation laws",
+keywords = "Euler",
+keywords = "MHD",
+keywords = "Uncertainty quantification",
+keywords = "Multi-level Monte Carlo",
+keywords = "Parallelization"
 }
 @techreport{mishra2011mlmcfvm,
   title =        {Multi-level {M}onte {C}arlo finite volume methods for nonlinear systems of conservation laws in multi-dimensions},
@@ -3171,6 +3156,25 @@ a Higher-Order Glaciologial Flow Model},
   pages={2001},
   year={2001},
   publisher={Citeseer}
+}
+@article{jameson1983solution,
+  title={Solution of the {E}uler equations for two dimensional transonic flow by a multigrid method},
+  author={Jameson, A.},
+  journal={Appl. Math. Comput},
+  volume={13},
+  number={3},
+  pages={327--355},
+  year={1983}
+}
+@article{pierce1997preconditioned,
+  title={Preconditioned multigrid methods for compressible flow calculations on stretched meshes},
+  author={Pierce, N.A. and Giles, M.B.},
+  journal={Journal of Computational Physics},
+  volume={136},
+  number={2},
+  pages={425--445},
+  year={1997},
+  publisher={Elsevier}
 }
 @article{adams2010toward,
   title={{Toward textbook multigrid efficiency for fully implicit resistive magnetohydrodynamics}},
@@ -3464,11 +3468,12 @@ a Higher-Order Glaciologial Flow Model},
   volume = {339},
   year = {2011}
 }
-@conference{malas2011streaming,
-  title={{Optimizing the Performance of Streaming Numerical Kernels on the IBM BlueGene/P PowerPC 450}},
+@article{malas2012streaming,
+  title={Optimizing the Performance of Streaming Numerical Kernels on the {IBM BlueGene/P PowerPC} 450 Processor},
   author={Tareq M. Malas and Aron J. Ahmadia and Jed Brown and John A. Gunnels and David E. Keyes},
-  booktitle={Supercomputing, ACM/IEEE 2011 Conference},
-  year={\emph{submitted} 2011}
+  journal={International Journal of High Performance Computing Applications},
+  volume={accepted},
+  year={2012}
 }
 @article{seiler2008larrabee,
   title={{Larrabee: a many-core x86 architecture for visual computing}},
@@ -4999,26 +5004,6 @@ author = "Hartmut Heinrich"
   year={1984},
   publisher={Springer}
 }
-@article{elman2011bouyancy,
-title = "Fast iterative solvers for buoyancy driven flow problems",
-journal = "Journal of Computational Physics",
-volume = "230",
-number = "10",
-pages = "3900 - 3914",
-year = "2011",
-note = "",
-issn = "0021-9991",
-doi = "DOI: 10.1016/j.jcp.2011.02.014",
-url = "http://www.sciencedirect.com/science/article/pii/S0021999111001033",
-author = "Howard Elman and Milan Mihajlovic and David Silvester",
-keywords = "Navier-Stokes",
-keywords = "Boussinesq",
-keywords = "Finite element approximation",
-keywords = "Time stepping",
-keywords = "Adaptivity",
-keywords = "Preconditioning",
-keywords = "Algebraic multigrid"
-}
 @article{eisenstat1983variational,
   title={Variational iterative methods for nonsymmetric systems of linear equations},
   author={Eisenstat, S.C. and Elman, H.C. and Schultz, M.H.},
@@ -5120,19 +5105,6 @@ keywords = "Iterative refinement"
   pages={383--406},
   year={1997},
   publisher={JSTOR}
-}
-@techreport{embree1999descriptive,
-  title={How descriptive are {GMRES} convergence bounds},
-  author={Embree, M.},
-  year={1999},
-  number={08},
-  institution={Oxford University Computing Laboratory}
-}
-@book{trefethen2005spectra,
-  title={Spectra and pseudospectra: the behavior of nonnormal matrices and operators},
-  author={Trefethen, L.N. and Embree, M.},
-  year={2005},
-  publisher={Princeton Univ Press}
 }
 @article{jiang2011singular,
 title = "A Singular {ES-FEM} for Plastic Fracture Mechanics",
@@ -7543,4 +7515,102 @@ year   = {in preparation}}
   pages={145--150},
   year={2007},
   publisher={Wiley Online Library}
+}
+@article{livshits2006accuracy,
+  title={Accuracy Properties of the Wave-Ray Multigrid Algorithm for {H}elmholtz Equations},
+  author={Livshits, I. and Brandt, A.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={28},
+  pages={1228},
+  year={2006}
+}
+@article{brandt1997wave,
+  title={Wave-ray multigrid method for standing wave equations},
+  author={Brandt, A. and Livshits, I.},
+  journal={Electronic Transactions on Numerical Analysis},
+  volume={6},
+  number={162-181},
+  pages={91},
+  year={1997}
+}
+@article{livshits2004algebraic,
+  title={An algebraic multigrid wave-ray algorithm to solve eigenvalue problems for the {H}elmholtz operator},
+  author={Livshits, I.},
+  journal={Numerical linear algebra with applications},
+  volume={11},
+  number={2-3},
+  pages={229--239},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+@article{shi2006fast,
+  title={A fast multigrid algorithm for mesh deformation},
+  author={Shi, L. and Yu, Y. and Bell, N. and Feng, W.W.},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={25},
+  number={3},
+  pages={1108--1117},
+  year={2006},
+  publisher={ACM}
+}
+@article{brandt1977multi,
+  title={Multi-{L}evel {A}daptive {S}olutions},
+  author={Brandt, A.},
+  journal={Mathematics of Computation},
+  volume={31},
+  number={138},
+  pages={333--390},
+  year={1977}
+}
+@article{hackbusch1982multi,
+  title={Multi-grid convergence theory},
+  author={Hackbusch, W.},
+  journal={Multigrid Methods},
+  pages={177--219},
+  year={1982},
+  publisher={Springer}
+}
+@article{alcouffe1981multi,
+  title={The multi-grid method for the diffusion equation with strongly discontinuous coefficients},
+  author={Alcouffe, R.E. and Brandt, A. and Dendy Jr, J.E. and Painter, J.W.},
+  journal={SIAM Journal on Scientific and Statistical Computing},
+  volume={2},
+  pages={430},
+  year={1981}
+}
+@article{leykekhman2012commutative,
+   author = {Leykekhman, Dmitriy},
+   affiliation = {Department of Mathematics, University of Connecticut, 196 Auditorium Road, Unit 3009, Storrs, CT 06269-3009, USA},
+   title = {Investigation of Commutative Properties of Discontinuous Galerkin Methods in PDE Constrained Optimal Control Problems},
+   journal = {Journal of Scientific Computing},
+   publisher = {Springer Netherlands},
+   issn = {0885-7474},
+   keyword = {Mathematics and Statistics},
+   pages = {1-29},
+   url = {http://dx.doi.org/10.1007/s10915-012-9582-y},
+   note = {10.1007/s10915-012-9582-y},
+}
+@conference{brown2012nonblocking,
+  author = {Jed Brown},
+  title = {User-Defined Non-Blocking Collectives Must Make Progress},
+  booktitle = {DOE Exascale Research Conference},
+  year = 2012
+}
+@conference{adams2012exascalelibraries,
+  author = {Mark Adams and Jed Brown and Barry F. Smith},
+  title = {Exascale Programming Models Must Vigorously Enable Libraries},
+  booktitle = {DOE Exascale Research Conference},
+  year = 2012
+}
+@conference{anitescu2012exascale,
+  author = {Mihai Anitescu and Jed Brown and Paul Fischer and Sven Leyffer and Lois Curfman McInnes and Todd Munson and Barry F. Smith},
+  title = {Exascale Co-design Opportunities: {M}ultilevel Approaches for Hierarchical Models, Architectures, Algorithms, and Software},
+  booktitle = {DOE Exascale Research Conference},
+  year = 2012
+}
+@techreport{scott2012fosteringgeo,
+  title={Fostering Interactions Between the Geosciences and Mathematics, Statistics, and Computer Science},
+  author={L. Ridgway Scott and Jed Brown and George W. Bergantz and Dan Cooley and Clint Dawson and Maarten de Hoop and Donald Estep and Natasha Flyer and Efi Foufoula-Georgiou and Michael Ghil and Matthew Knepley and Randall J. LeVeque and Lek-Heng Lim and Serge Prudhomme and Adrian Sandu and Frederik J. Simons and Philip B. Stark and Michael Stein and Seth Stein and Toshiro Tanimoto and Daniel Tartakovsky and Jonathan Weare and Robert Weiss and Grady B. Wright and Dave Yuen},
+  institution={University of Chicago},
+  year=2012
 }
