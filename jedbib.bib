@@ -1306,19 +1306,6 @@
    year = 2008,
    url = "http://www.tacc.utexas.edu/research/users/features/laser_surgery.pdf"
 }
-@techreport{dobbhbbbdeffghkkps2008,
- author      = {{K. R. Diller and J. T. Oden and C. Bajaj and
-                  J. C. Browne and J. Hazle and
-                  I. Babu{\v{s}}ka and J. Bass and L. Bidaut
-                  and L. Demkowicz and A. Elliott and Y. Feng and
-                  D. Fuentes and S. Goswami and A. Hawkins and
-                  S. Khoshnevis and B. Kwon and S. Prudhomme and
-                  R. J. Stafford}},
- title       = "Computational Infrastructure for the Real-Time Patient-Specific Treatment of Cancer",
- year        = 2008,
- institution = "University of Texas at Austin",
- url        = "http://www.tacc.utexas.edu/research/users/features/cancer.pdf"
-}
 @article{papanastasiou1992nob,
   title={{A new outflow boundary condition}},
   author={Papanastasiou, T.C. and Malamataris, N. and Ellwood, K.R.J.},
@@ -1823,13 +1810,6 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={2007},
   publisher={American Mathematical Society}
 }
-@TechReport{ml-guide,
-  author      =  {M.W. Gee and C.M. Siefert and J.J. Hu and R.S. Tuminaro and M.G. Sala},
-  title       =  {{ML} 5.0 Smoothed Aggregation User's Guide},
-  institution =  {Sandia National Laboratories},
-  year        =  {2006},
-  number      =  {SAND2006-2649},
-}
 @Article{libmesh,
   author = {B.~Kirk and J.~W.~Peterson and R.~H.~Stogner and G.~F.~Carey},
   title = {\texttt{libMesh}: A {C++} Library for Parallel Adaptive Mesh
@@ -2094,6 +2074,26 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={2006},
   publisher={Elsevier}
 }
+@article{butcher1976implementation,
+  title={On the implementation of implicit {R}unge-{K}utta methods},
+  author={Butcher, John C.},
+  journal={BIT Numerical Mathematics},
+  volume={16},
+  number={3},
+  pages={237--240},
+  year={1976},
+  publisher={Springer}
+}
+@article{bickart1977efficient,
+  title={An efficient solution process for implicit {R}unge-{K}utta methods},
+  author={Bickart, Theodore A},
+  journal={SIAM Journal on Numerical Analysis},
+  volume={14},
+  number={6},
+  pages={1022--1027},
+  year={1977},
+  publisher={SIAM}
+}
 @misc{podhaisky2006atlas,
   title={Atlas of general linear methods with inherent {R}unge-{K}utta stability},
   author={Podhaisky, H.},
@@ -2240,6 +2240,15 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={2004},
   publisher={Elsevier}
 }
+@article{erlangga2008multilevel,
+  title={On a multilevel Krylov method for the Helmholtz equation preconditioned by shifted Laplacian},
+  author={Erlangga, Yogi A and Nabben, Reinhard},
+  journal={Electronic Transactions on Numerical Analysis},
+  volume={31},
+  number={403-424},
+  pages={3},
+  year={2008}
+}
 @article{li2007bddc,
   title={{A BDDC Preconditioner for Saddle Point Problems}},
   author={Li, J. and Widlund, O.},
@@ -2248,12 +2257,6 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   pages={415},
   year={2007},
   publisher={Springer}
-}
-@book{toselli2005domain,
-  title={{Domain decomposition methods--algorithms and theory}},
-  author={Toselli, A. and Widlund, O.B.},
-  year={2005},
-  publisher={Springer Verlag}
 }
 @article{kershaw1978incomplete,
   title={{The incomplete Cholesky- Conjugate gradient method for the iterative solution of systems of linear equations(for computerized simulation of laser fusion)}},
@@ -3117,12 +3120,40 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   year={2011},
   publisher={SIAM}
 }
+@article{brandt1986algebraic,
+  title={Algebraic multigrid theory: The symmetric case},
+  author={Brandt, Achi},
+  journal={Applied Mathematics and Computation},
+  volume={19},
+  number={1},
+  pages={23--56},
+  year={1986},
+  publisher={Elsevier}
+}
+@article{ruge1987algebraic,
+  title={Algebraic multigrid},
+  author={Ruge, J.W. and St{\"u}ben, Klaus},
+  journal={Multigrid methods},
+  volume={3},
+  pages={73--130},
+  year={1987},
+  publisher={SIAM, Philadelphia}
+}
 @article{brandt1979multigrid,
   title={{Multigrid solutions to elliptic flow problems}},
   author={Brandt, A. and Dinar, N.},
   journal={Numerical Methods for Partial Differential Equations},
   pages={53--147},
   year={1979}
+}
+@inbook{brandt1979singular,
+  title={Multi-Level Adaptive Techniques(MLAT) for singular-perturbation problems},
+  author={Achi Brandt},
+  booktitle={Numerical Analysis of Singular Perturbation Problems},
+  editor={Hemker, Pieter W. and Miller, John J.H.},
+  pages={53--142},
+  year={1979},
+  publisher={Academic Press}
 }
 @article{brandt1990matrix,
   title={Multilevel matrix multiplication and fast solution of integral equations},
@@ -3472,8 +3503,11 @@ booktitle = {Numerical Methods in Fluid Dynamics},
   title={Optimizing the Performance of Streaming Numerical Kernels on the {IBM BlueGene/P PowerPC} 450 Processor},
   author={Tareq M. Malas and Aron J. Ahmadia and Jed Brown and John A. Gunnels and David E. Keyes},
   journal={International Journal of High Performance Computing Applications},
-  volume={published online},
-  year={2012},
+  volume={27},
+  number={2},
+  pages={193--209},
+  year={2013},
+  publisher={SAGE Publications},
   doi={10.1177/1094342012444795}
 }
 @misc{eichenberger2010shared,
@@ -5445,26 +5479,6 @@ keywords = "Arbitrary Lagrangian Eulerian, ALE"
   volume={32},
   pages={2523},
   year={2010}
-}
-@article{xu2004energy,
-  title={On an energy minimizing basis for algebraic multigrid methods},
-  author={Xu, J. and Zikatanov, L.},
-  journal={Computing and Visualization in Science},
-  volume={7},
-  number={3},
-  pages={121--127},
-  year={2004},
-  publisher={Springer}
-}
-@article{vanek1996algebraic,
-  title={Algebraic multigrid by smoothed aggregation for second and fourth order elliptic problems},
-  author={Van{\v{e}}k, P. and Mandel, J. and Brezina, M.},
-  journal={Computing},
-  volume={56},
-  number={3},
-  pages={179--196},
-  year={1996},
-  publisher={Springer}
 }
 @article{ainsworth1999approximation,
   title={The approximation theory for the $p$-version finite element method and application to non-linear elliptic {PDE}s},
@@ -7689,7 +7703,7 @@ year   = {in preparation}}
 @article{brandt1983complementarity,
   title={Multigrid algorithms for the solution of linear complementarity problems arising from free boundary problems},
   author={Brandt, A. and Cryer, C.W.},
-  journal={SIAM journal on scientific and statistical computing},
+  journal={SIAM Journal on Scientific and Statistical Computing},
   volume={4},
   number={4},
   pages={655--684},
@@ -8168,7 +8182,7 @@ Computational science},
   publisher={Elsevier}
 }
 @article{kucharik2010comparative,
-  title={A comparative study of interface reconstruction methods for multi-material ALE simulations},
+  title={A comparative study of interface reconstruction methods for multi-material {ALE} simulations},
   author={Kucharik, M. and Garimella, R.V. and Schofield, S.P. and Shashkov, M.J.},
   journal={Journal of Computational Physics},
   volume={229},
@@ -8176,6 +8190,16 @@ Computational science},
   pages={2432--2452},
   year={2010},
   publisher={Elsevier}
+}
+@article{schofield2010multimaterial,
+  title={Multi-material incompressible flow simulation using the moment-of-fluid method},
+  author={Schofield, Samuel P and Christon, Mark A and Dyadechko, Vadim and Garimella, Rao V and Lowrie, Robert B and Swartz, Blair K},
+  journal={International Journal for Numerical Methods in Fluids},
+  volume={63},
+  number={8},
+  pages={931--952},
+  year={2010},
+  publisher={Wiley Online Library}
 }
 @article{berger2005analysis,
   title={Analysis of slope limiters on irregular grids},
@@ -8269,6 +8293,26 @@ Computational science},
   year={1995},
   publisher={Springer}
 }
+@article{horton1995polylog,
+  title={An algorithm with polylog parallel complexity for solving parabolic partial differential equations},
+  author={Horton, Graham and Vandewalle, Stefan and Worley, P},
+  journal={SIAM Journal on Scientific Computing},
+  volume={16},
+  number={3},
+  pages={531--541},
+  year={1995},
+  publisher={SIAM}
+}
+@article{horton1995spacetime,
+  title={A space-time multigrid method for parabolic partial differential equations},
+  author={Horton, Graham and Vandewalle, Stefan},
+  journal={SIAM Journal on Scientific Computing},
+  volume={16},
+  number={4},
+  pages={848--864},
+  year={1995},
+  publisher={SIAM}
+}
 @article{hackbusch1984parabolic,
   title={Parabolic multi-grid methods},
   author={Hackbusch, Wolfgang},
@@ -8299,6 +8343,12 @@ Computational science},
   pages={143--154},
   year={1991}
 }
+@phdthesis{greenwald1992parabolic,
+  title={Multigrid Techniques for Parabolic Problems},
+  author={J. C. Greenwald},
+  institute={Weizmann Institute of Science},
+  year=1992
+}
 @article{emmett2012toward,
   title={Toward an efficient parallel in time method for partial differential equations},
   author={Emmett, Matthew and Minion, Michael},
@@ -8317,6 +8367,29 @@ Computational science},
   pages={556--578},
   year={2007},
   publisher={SIAM}
+}
+@incollection{gander2007superlinear,
+  title={On the superlinear and linear convergence of the parareal algorithm},
+  author={Gander, Martin J. and Vandewalle, Stefan},
+  booktitle={Domain decomposition methods in science and engineering XVI},
+  pages={291--298},
+  year={2007},
+  publisher={Springer}
+}
+@article{gander2008hyperbolic,
+  title={Analysis of the parareal algorithm applied to hyperbolic problems using characteristics},
+  author={Gander, Martin J},
+  journal={Bolet{\'\i}n SEMA},
+  number={42},
+  year={2008}
+}
+@incollection{gander2008nonlinear,
+  title={Nonlinear convergence analysis for the parareal algorithm},
+  author={Gander, Martin J. and Hairer, Ernst},
+  booktitle={Domain Decomposition Methods in Science and Engineering XVII},
+  pages={45--56},
+  year={2008},
+  publisher={Springer}
 }
 @article{dutt2000spectral,
   title={Spectral deferred correction methods for ordinary differential equations},
@@ -8364,6 +8437,24 @@ Computational science},
   year={2005},
   publisher={SIAM}
 }
+@article{diskin2010comparison,
+  title={Comparison of node-centered and cell-centered unstructured finite-volume discretizations: Viscous fluxes},
+  author={Diskin, Boris and Thomas, James L and Nielsen, Eric J and Nishikawa, Hiroaki and White, Jeffery A},
+  journal={AIAA journal},
+  volume={48},
+  number={7},
+  pages={1326--1338},
+  year={2010}
+}
+@article{diskin2011comparison,
+  title={Comparison of node-centered and cell-centered unstructured finite-volume discretizations: inviscid fluxes},
+  author={Diskin, Boris and Thomas, James L},
+  journal={AIAA journal},
+  volume={49},
+  number={4},
+  pages={836--854},
+  year={2011}
+}
 @article{brandt1993accelerated,
   title={Accelerated multigrid convergence and high-{R}eynolds recirculating flows},
   author={Brandt, Achi and Yavneh, Irad},
@@ -8389,4 +8480,520 @@ Computational science},
   author={Brandt, A},
   year={1981},
   publisher={The Weizmann Institute of Science, Rehovot, Israel}
+}
+@article{spillane2011abstract,
+  title={Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps},
+  author={Spillane, N and Dolean, V and Hauret, P and Nataf, F and Pechstein, C and Scheichl, R},
+  journal={NuMa-Report},
+  volume={7},
+  pages={2007},
+  year={2011}
+}
+@article{pattyn2013marine,
+  title={Why marine ice-sheet model predictions may diverge in estimating future sea-level rise},
+  author={Pattyn, Frank and Durand, Ga{\"e}l},
+  journal={Geophysical Research Letters},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+@article{turk2013scale,
+  title={How to Scale a Code in the Human Dimension},
+  author={Turk, Matthew J.},
+  journal={arXiv preprint arXiv:1301.7064},
+  year={2013}
+}
+@article{knepley2013unified,
+  title={Achieving High Performance with Unified Residual Evaluation},
+  author={Matthew G. Knepley and Jed Brown and Karl Rupp and Barry F. Smith},
+  journal={arXiv preprint arXiv:1309.1204},
+  year={2013}
+}
+@article{knepley2013citations,
+  title={Accurately Citing Software and Algorithms Used in Publications},
+  author={Matthew G. Knepley and Jed Brown and Lois Curfman McInnes and Barry F. Smith},
+  journal={figshare preprint \url{http://dx.doi.org/10.6084/m9.figshare.785731}},
+  year={2013}
+}
+@article{brown2013runtime,
+  title={Run-time extensibility: anything less is unsustainable},
+  author={Jed Brown, Matthew G. Knepley, Barry F. Smith},
+  journal={figshare preprint \url{http://dx.doi.org/10.6084/m9.figshare.791571}},
+  year={2013}
+}
+@inproceedings{brown2013dimension,
+  title={Vectorization, communication aggregation, and reuse in stochastic and temporal dimensions},
+  author={Jed Brown},
+  booktitle={Exascale Mathematics Workshop, Aug 21--22, Washington, DC},
+  year={2013},
+  organization={DOE Office of Advanced Scientific Computing Research}
+}
+@inproceedings{adams2013lowcomm,
+  title={Low-communication techniques for extreme-scale multilevel solvers},
+  author={Mark F. Adams and Jed Brown and Matt Knepley},
+  booktitle={Exascale Mathematics Workshop, Aug 21--22, Washington, DC},
+  year={2013},
+  organization={DOE Office of Advanced Scientific Computing Research}
+}
+@techreport{arrigo2013earthcube,
+  title={{EarthCube} Modeling Workshop Results},
+  author={Jennifer Arrigo and Jed Brown and Louise Kellogg and Lorraine Hwang and Scott Peckham and David Tarboton},
+  institution={Computational Infrastructure for Geodynamics},
+  url={http://geodynamics.org/cig/community/workshops/Earthcube13/ExecSummary},
+  year={2013}
+}
+@article{may2013scalable,
+  title={A scalable matrix-free {S}tokes discretization for geodynamic applications},
+  author={David A. May and Jed Brown and Laetitia Le Pourhiet},
+  journal={\emph{submitted}},
+  year={2013}
+}
+@inproceedings{bui2012extreme,
+  title={Extreme-scale UQ for Bayesian inverse problems governed by PDEs},
+  author={Bui-Thanh, Tan and Burstedde, Carsten and Ghattas, Omar and Martin, James and Stadler, Georg and Wilcox, Lucas C},
+  booktitle={Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
+  pages={3},
+  year={2012},
+  organization={IEEE Computer Society Press}
+}
+@inproceedings{nishikawa2010development,
+  title={Development and application of agglomerated multigrid methods for complex geometries},
+  author={Nishikawa, Hiroaki and Diskin, Boris and Thomas, James L},
+  booktitle={40th Fluid Dynamics Conference and Exhibit},
+  note={AIAA-2010-4731},
+  year={2010}
+}
+@article{brune2013unstructured,
+  title={Unstructured geometric multigrid in two and three dimensions on complex and graded meshes},
+  author={Brune, Peter R and Knepley, Matthew G and Scott, L Ridgway},
+  journal={SIAM Journal on Scientific Computing},
+  volume={35},
+  number={1},
+  pages={A173--A191},
+  year={2013},
+  publisher={SIAM}
+}
+@article{falgout2004generalizing,
+  title={On generalizing the algebraic multigrid framework},
+  author={Falgout, Robert D and Vassilevski, Panayot S},
+  journal={SIAM Journal on Numerical Analysis},
+  volume={42},
+  number={4},
+  pages={1669--1693},
+  year={2004},
+  publisher={SIAM}
+}
+@article{ron2011relaxation,
+  title={Relaxation-based coarsening and multiscale graph organization},
+  author={Ron, Dorit and Safro, Ilya and Brandt, Achi},
+  journal={Multiscale Modeling \& Simulation},
+  volume={9},
+  number={1},
+  pages={407--423},
+  year={2011},
+  publisher={SIAM}
+}
+@article{morano1998coarsening,
+  title={Coarsening strategies for unstructured multigrid techniques with application to anisotropic problems},
+  author={Morano, E. and Mavriplis, D.J. and Venkatakrishnan, V.},
+  journal={SIAM Journal on Scientific Computing},
+  volume={20},
+  number={2},
+  pages={393--415},
+  year={1998},
+  publisher={SIAM}
+}
+@article{brezina2001algebraic,
+  title={Algebraic multigrid based on element interpolation (AMGe)},
+  author={Brezina, Marian and Cleary, Andy J and Falgout, Rob D and Henson, VE and Jones, JE and Manteuffel, TA and McCormick, SF and Ruge, JW},
+  journal={SIAM Journal on Scientific Computing},
+  volume={22},
+  number={5},
+  pages={1570--1592},
+  year={2001},
+  publisher={SIAM}
+}
+@article{bell2012exposing,
+  title={Exposing fine-grained parallelism in algebraic multigrid methods},
+  author={Bell, Nathan and Dalton, Steven and Olson, Luke N},
+  journal={SIAM Journal on Scientific Computing},
+  volume={34},
+  number={4},
+  pages={C123--C152},
+  year={2012},
+  publisher={SIAM}
+}
+@article{jameson2003amr,
+  title={AMR vs high order schemes},
+  author={Jameson, Leland},
+  journal={Journal of scientific computing},
+  volume={18},
+  number={1},
+  pages={1--24},
+  year={2003},
+  publisher={Springer}
+}
+@unpublished{may2011tightly,
+  author={Dave A. May and Laetitia Le Pourhiet and Jed Brown},
+  title={Tightly coupled geodynamic systems: Software, implicit solvers, and applications},
+  note={American Geophysical Union Fall Meeting},
+  year=2011
+}
+@phdthesis{andreev2012stability,
+  title={Stability of space-time {P}etrov-{G}alerkin discretizations for parabolic evolution equations},
+  author={Andreev, Roman},
+  year={2012},
+  school={Diss., Eidgen{\"o}ssische Technische Hochschule ETH Z{\"u}rich, Nr. 20842, 2012}
+}
+@article{andreev2013stability,
+  title={Stability of sparse space-time finite element discretizations of linear parabolic evolution equations},
+  author={Andreev, Roman},
+  journal={IMA Journal of Numerical Analysis},
+  volume={33},
+  number={1},
+  pages={242--260},
+  year={2013},
+  publisher={Oxford University Press}
+}
+@article{smith1991domain,
+  title={A domain decomposition algorithm for elliptic problems in three dimensions},
+  author={Smith, Barry F},
+  journal={Numerische Mathematik},
+  volume={60},
+  number={1},
+  pages={219--234},
+  year={1991},
+  publisher={Springer}
+}
+@article{pavarino1999iterative,
+  title={Iterative substructuring methods for spectral element discretizations of elliptic systems {I}: {C}ompressible linear elasticity},
+  author={Pavarino, Luca F and Widlund, Olof B},
+  journal={SIAM Journal on Numerical Analysis},
+  volume={37},
+  number={2},
+  pages={353--374},
+  year={1999},
+  publisher={SIAM}
+}
+@article{hager2009nonlinear,
+  title={Nonlinear complementarity functions for plasticity problems with frictional contact},
+  author={Hager, Corinna and Wohlmuth, B.I.},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={198},
+  number={41},
+  pages={3411--3427},
+  year={2009},
+  publisher={Elsevier}
+}
+@article{bridges2012fault,
+  author    = {Patrick G. Bridges and
+               Kurt B. Ferreira and
+               Michael A. Heroux and
+               Mark Hoemmen},
+  title     = {Fault-tolerant linear solvers via selective reliability},
+  journal   = {CoRR},
+  volume    = {abs/1206.1390},
+  year      = {2012},
+  ee        = {http://arxiv.org/abs/1206.1390},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@techreport{sullivan2011containment,
+    author = { Michael Sullivan and Doe Hyun Yoon and Mattan Erez },
+    title = { Containment Domains: A Full-System Approach to Computational Resiliency },
+    number = { TR-LPH-2011-001 },
+    institution = { LPH Group, Dept. of Electrical and Computer Engineering, The University of Texas at Austin },
+    month = { January },
+    year = { 2011 },
+    mycat = { report },
+}
+@article{mishra2003algorithm,
+  title={An algorithm-based error detection scheme for the multigrid method},
+  author={Mishra, Amitabh and Banerjee, Prithviraj},
+  journal={IEEE Transactions on Computers},
+  volume={52},
+  number={9},
+  pages={1089--1099},
+  year={2003},
+  publisher={IEEE}
+}
+@techreport{saws-manual,
+  author={Matthew Otten and Jed Brown and Barry Smith},
+  title={Sciencific {A}pplication (W)eb server Users Manual},
+  year=2013,
+  institution={Argonne National Laboratory}
+}
+@incollection{safro2012advanced,
+  title={Advanced coarsening schemes for graph partitioning},
+  author={Safro, Ilya and Sanders, Peter and Schulz, Christian},
+  booktitle={Experimental Algorithms},
+  pages={369--380},
+  year={2012},
+  publisher={Springer}
+}
+@article{hargrove2006blcr,
+    author = "Paul H Hargrove and Jason C Duell",
+    title = "Berkeley lab checkpoint/restart {(BLCR)} for {Linux} clusters",
+    journal = "Journal of Physics: Conference Series",
+    volume = "46",
+    number = "1",
+    pages = "494",
+    url = "http://stacks.iop.org/1742-6596/46/i=1/a=067",
+    year = "2006"
+}
+@inproceedings{jolivet2013scalabledd,
+  title={Scalable domain decomposition preconditioners for heterogeneous elliptic problems},
+  author={Jolivet, Pierre and Hecht, Fr{\'e}d{\'e}ric and Nataf, Fr{\'e}d{\'e}ric and Prud'homme, Christophe},
+  booktitle={Proceedings of SC13: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={80},
+  year={2013},
+  organization={ACM}
+}
+@article{ernst2010stochastic,
+  title={Stochastic {G}alerkin matrices},
+  author={Ernst, Oliver G. and Ullmann, Elisabeth},
+  journal={SIAM Journal on Matrix Analysis and Applications},
+  volume={31},
+  number={4},
+  pages={1848--1872},
+  year={2010},
+  publisher={SIAM}
+}
+@incollection{krause2008multiscale,
+  title={On the multiscale solution of constrained minimization problems},
+  author={Krause, Rolf},
+  booktitle={Domain Decomposition Methods in Science and Engineering XVII},
+  pages={93--104},
+  year={2008},
+  publisher={Springer}
+}
+@incollection{cai2009nonlinear,
+  title={Nonlinear overlapping domain decomposition methods},
+  author={Cai, Xiao-Chuan},
+  booktitle={Domain Decomposition Methods in Science and Engineering XVIII},
+  pages={217--224},
+  year={2009},
+  publisher={Springer}
+}
+@article{hwang2007class,
+  title={A class of parallel two-level nonlinear {S}chwarz preconditioned inexact {N}ewton algorithms},
+  author={Hwang, Feng-Nan and Cai, Xiao-Chuan},
+  journal={Computer methods in applied mechanics and engineering},
+  volume={196},
+  number={8},
+  pages={1603--1611},
+  year={2007},
+  publisher={Elsevier}
+}
+@article{guo2013parallel,
+  title = "A parallel, fully coupled, fully implicit solution to reactive transport in porous media using the preconditioned {J}acobian-{F}ree {N}ewton-{K}rylov Method ",
+  journal = "Advances in Water Resources ",
+  volume = "53",
+  number = "0",
+  pages = "101 - 108",
+  year = "2013",
+  note = "",
+  issn = "0309-1708",
+  doi = "http://dx.doi.org/10.1016/j.advwatres.2012.10.010",
+  url = "http://www.sciencedirect.com/science/article/pii/S0309170812002722",
+  author = "Luanjing Guo and Hai Huang and Derek R. Gaston and Cody J. Permann and David Andrs and George D. Redden and Chuan Lu and Don T. Fox and Yoshiko Fujita",
+  keywords = "Reactive transport",
+  keywords = "Jacobian-Free Newton-Krylov",
+  keywords = "Physics-based block preconditioner "
+}
+@article{williamson2012multidimensional,
+  title={Multidimensional multiphysics simulation of nuclear fuel behavior},
+  author={Williamson, R.L. and Hales, J.D. and Novascone, S.R. and Tonks, M.R. and Gaston, D.R. and Permann, C.J. and Andrs, D. and Martineau, R.C.},
+  journal={Journal of Nuclear Materials},
+  volume={423},
+  number={1},
+  pages={149--163},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{hales2012solving,
+  title={Solving Nonlinear Solid Mechanics Problems with the {J}acobian-{F}ree {N}ewton {K}rylov Method},
+  author={Hales, J.D. and Novascone, S.R. and Williamson, R.L. and Gaston, D.R. and Tonks, M.R.},
+  journal={Computer Modeling in Engineering \& Sciences(CMES)},
+  volume={84},
+  number={2},
+  pages={123--153},
+  year={2012},
+  publisher={Tech Science Press}
+}
+@article{dennis2012computational,
+  title={Computational performance of ultra-high-resolution capability in the Community Earth System Model},
+  author={Dennis, John M and Vertenstein, Mariana and Worley, Patrick H and Mirin, Arthur A and Craig, Anthony P and Jacob, Robert and Mickelson, Sheri},
+  journal={International Journal of High Performance Computing Applications},
+  volume={26},
+  number={1},
+  pages={5--16},
+  year={2012},
+  publisher={SAGE Publications}
+}
+@article{wienands2009collocation,
+  title={Collocation coarse approximation in multigrid},
+  author={Wienands, Roman and Yavneh, Irad},
+  journal={SIAM Journal on Scientific Computing},
+  volume={31},
+  number={5},
+  pages={3643--3660},
+  year={2009},
+  publisher={SIAM}
+}
+@article{sala2008petrov,
+  title={A new {P}etrov-{G}alerkin smoothed aggregation preconditioner for nonsymmetric linear systems},
+  author={Sala, Marzio and Tuminaro, Raymond S},
+  journal={SIAM Journal on Scientific Computing},
+  volume={31},
+  number={1},
+  pages={143--166},
+  year={2008},
+  publisher={SIAM}
+}
+@incollection{baker2012scaling,
+  title={Scaling algebraic multigrid solvers: {O}n the road to exascale},
+  author={Baker, Allison H. and Falgout, Robert D. and Gamblin, Todd and Kolev, Tzanio V. and Schulz, Martin and Yang, Ulrike Meier},
+  booktitle={Competence in High Performance Computing 2010},
+  pages={215--226},
+  year={2012},
+  publisher={Springer}
+}
+@article{cappello2009fault,
+  title={Fault tolerance in petascale/exascale systems: {C}urrent knowledge, challenges and research opportunities},
+  author={Cappello, Franck},
+  journal={International Journal of High Performance Computing Applications},
+  volume={23},
+  number={3},
+  pages={212--226},
+  year={2009},
+  publisher={Sage Publications}
+}
+@article{falgout2013nongalerkin,
+  title={Non-{G}alerkin Coarse Grids for Algebraic Multigrid},
+  author={Robert D. Falgout and Jacob B. Schroder},
+  journal={\emph{submitted}},
+  year=2013
+}
+@article{brezina2006adaptive,
+  title={Adaptive algebraic multigrid},
+  author={Brezina, Marian and Falgout, R and MacLachlan, Scott and Manteuffel, T and McCormick, S and Ruge, John},
+  journal={SIAM Journal on Scientific Computing},
+  volume={27},
+  number={4},
+  pages={1261--1286},
+  year={2006},
+  publisher={SIAM}
+}
+@article{brandt2000general,
+  title={General highly accurate algebraic coarsening},
+  author={Brandt, Achi},
+  journal={Electronic Transactions on Numerical Analysis},
+  volume={10},
+  number={1},
+  pages={1--20},
+  year={2000}
+}
+@article{brezina2004adaptive,
+  title={Adaptive smoothed aggregation ($\alpha$ SA)},
+  author={Brezina, M and Falgout, R and MacLachlan, S and Manteuffel, T and McCormick, S and Ruge, J},
+  journal={SIAM Journal on Scientific Computing},
+  volume={25},
+  number={6},
+  pages={1896--1920},
+  year={2004},
+  publisher={SIAM}
+}
+@inproceedings{dobrev2013discretization,
+  title={Scalable multi-physics simulations will require new discretization and numerical methods research},
+  author={Veselin Dobrev and Tzanio Kolev and Robert Rieben and Bert Still},
+  booktitle={Proceedings of the ASCR Exascale Mathematics Research Conference},
+  year={2013}
+}
+@article{ozbench2008model,
+  title={A model comparison study of large-scale mantle-lithosphere dynamics driven by subduction},
+  author={OzBench, Mark and Regenauer-Lieb, Klaus and Stegman, Dave R and Morra, Gabriele and Farrington, Rebecca and Hale, Alina and May, Dave A and Freeman, Justin and Bourgouin, Laurent and M{\"u}hlhaus, Hans and others},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={171},
+  number={1},
+  pages={224--234},
+  year={2008},
+  publisher={Elsevier}
+}
+@article{branlund2001weak,
+  title={Weak zone formation for initiating subduction from thermo-mechanical feedback of low-temperature plasticity},
+  author={Branlund, JM and Regenauer-Lieb, K and Yuen, DA},
+  journal={Earth and Planetary Science Letters},
+  volume={190},
+  number={3},
+  pages={237--250},
+  year={2001},
+  publisher={Elsevier}
+}
+@article{kameyama1999thermal,
+  title={Thermal-mechanical effects of low-temperature plasticity (the Peierls mechanism) on the deformation of a viscoelastic shear zone},
+  author={Kameyama, Masanori and Yuen, David A and Karato, Shun-Ichiro},
+  journal={Earth and Planetary Science Letters},
+  volume={168},
+  number={1},
+  pages={159--172},
+  year={1999},
+  publisher={Elsevier}
+}
+@article{kaus2006initiation,
+  title={Initiation of localized shear zones in viscoelastoplastic rocks},
+  author={Kaus, Boris JP and Podladchikov, Yuri Y},
+  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
+  volume={111},
+  number={B4},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+@article{berger2012inexact,
+  title={Inexact {S}chwarz-algebraic multigrid preconditioners for crack problems modeled by extended finite element methods},
+  author={Berger-Vergiat, Luc and Waisman, Haim and Hiriyur, Badri and Tuminaro, Ray and Keyes, David},
+  journal={International Journal for Numerical Methods in Engineering},
+  volume={90},
+  number={3},
+  pages={311--328},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+@article{hiriyur2012quasi,
+  title={A quasi-algebraic multigrid approach to fracture problems based on extended finite elements},
+  author={Hiriyur, Badri and Tuminaro, Ray S and Waisman, Haim and Boman, Erik G and Keyes, David E},
+  journal={SIAM Journal on Scientific Computing},
+  volume={34},
+  number={2},
+  pages={A603--A626},
+  year={2012},
+  publisher={SIAM}
+}
+@article{brown2010toward,
+  title={Toward energy-efficient computing},
+  author={Brown, David J and Reams, Charles},
+  journal={Communications of the ACM},
+  volume={53},
+  number={3},
+  pages={50--58},
+  year={2010},
+  publisher={ACM}
+}
+@article{hibler2000modeling,
+  title={On modeling the anisotropic failure and flow of flawed sea ice},
+  author={Hibler, W.D. and Schulson, Erland M.},
+  journal={Journal of Geophysical Research: Oceans (1978--2012)},
+  volume={105},
+  number={C7},
+  pages={17105--17120},
+  year={2000},
+  publisher={Wiley Online Library}
+}
+@article{zhang1997efficient,
+  title={On an efficient numerical method for modeling sea ice dynamics},
+  author={Zhang, Jinlun and Hibler III, W.D.},
+  journal={Journal of Geophysical Research},
+  volume={102},
+  number={C4},
+  pages={8691--8702},
+  year={1997},
+  publisher={American Geophysical Union}
 }
