@@ -8460,16 +8460,18 @@ Computational science},
   journal={arXiv preprint arXiv:1309.1204},
   year={2013}
 }
-@article{knepley2013citations,
+@conference{knepley2013citations,
   title={Accurately Citing Software and Algorithms Used in Publications},
   author={Matthew G. Knepley and Jed Brown and Lois Curfman McInnes and Barry F. Smith},
-  journal={figshare preprint \url{http://dx.doi.org/10.6084/m9.figshare.785731}},
+  booktitle={Workshop towards Sustainable Software for Science: Practice and Experiences (WSSSPE)},
+  note={Preprint \url{http://dx.doi.org/10.6084/m9.figshare.785731}},
   year={2013}
 }
-@article{brown2013runtime,
+@conference{brown2013runtime,
   title={Run-time extensibility: anything less is unsustainable},
   author={Jed Brown, Matthew G. Knepley, Barry F. Smith},
-  journal={figshare preprint \url{http://dx.doi.org/10.6084/m9.figshare.791571}},
+  booktitle={Workshop towards Sustainable Software for Science: Practice and Experiences (WSSSPE)},  
+  note={Preprint \url{http://dx.doi.org/10.6084/m9.figshare.791571}},
   year={2013}
 }
 @inproceedings{brown2013dimension,
@@ -8493,11 +8495,11 @@ Computational science},
   url={http://geodynamics.org/cig/community/workshops/Earthcube13/ExecSummary},
   year={2013}
 }
-@article{may2013scalable,
+@article{may2014scalable,
   title={A scalable matrix-free {S}tokes discretization for geodynamic applications},
   author={David A. May and Jed Brown and Laetitia Le Pourhiet},
   journal={\emph{submitted}},
-  year={2013}
+  year={2014}
 }
 @inproceedings{bui2012extreme,
   title={Extreme-scale UQ for Bayesian inverse problems governed by PDEs},
@@ -8672,6 +8674,25 @@ Computational science},
   title={Sciencific {A}pplication (W)eb server Users Manual},
   year=2013,
   institution={Argonne National Laboratory}
+}
+@techreport{HPGMGv1,
+  author =      "M. F. Adams  and J. Brown and J. Shalf and B. Van Straalen
+and E. Strohmaier and S. Williams",
+  title =       "{HPGMG} 1.0: A Benchmark for Ranking High Performance
+Computing Systems",
+  institution = "LBNL",
+  address =     "Berkeley",
+  year =        "2014",
+  NUMBER =        {LBNL-6630E},
+}
+@book{adams2014hpgmg1.0,
+  title={{HPGMG} 1.0: {A} Benchmark for Ranking High Performance Computing Systems},
+  url={http://www.osti.gov/scitech/servlets/purl/1131029},
+  DOI={10.2172/1131029},
+  abstractNote={This document provides an overview of the benchmark ? HPGMG ? for ranking large scale general purpose computers for use on the Top500 list [8]. We provide a rationale for the need for a replacement for the current metric HPL, some background of the Top500 list and the challenges of developing such a metric; we discuss our design philosophy and methodology, and an overview of the specification of the benchmark. The primary documentation with maintained details on the specification can be found at hpgmg.org and the Wiki and benchmark code itself can be found in the repository https://bitbucket.org/hpgmg/hpgmg.},
+  author={Adams, Mark and Brown, Jed and Shalf, John and Straalen, Brian Van and Strohmaier, Erich and Williams, Sam},
+  year={2014},
+  month={May}
 }
 @incollection{safro2012advanced,
   title={Advanced coarsening schemes for graph partitioning},
@@ -8964,4 +8985,50 @@ Computational science},
   pages={4},
   year={2003},
   organization={ACM}
+}
+@techreport{ghosh2014scalable,
+  title = {Scalable Nonlinear Compact Schemes},
+  number = {ANL/MCS-TM-340},
+  institution={Argonne National Laboratory},
+  year = {2014},
+  abstract = {Solutions to hyperbolic conservation laws are often characterized by a large range of length scales as well as discontinuities. Standard nonlinear finite-difference schemes, such as the WENO schemes, yield non- oscillatory solutions but lack the spectral resolution required to model the relevant length scales. Linear compact schemes have a high spectral resolution; however, they suffer from spurious oscillations across discontinuities and sharp gradients. Weighted nonlinear compact schemes, such as the CRWENO scheme and the hybrid compact-WENO schemes, combine the non-oscillatory nature of the WENO schemes with the high spectral resolution of the compact schemes and are thus ideal for solutions with multiple length scales and discontinuities. One example of an application area is compressible, turbulent flows. The CRWENO scheme and the hybrid compact-WENO schemes have a nonlinear, solution-dependent left-hand side and therefore require the solution of banded systems of equations at each time-integration step or stage. Application of these schemes to multiprocessor simulations requires an efficient, scalable algorithm for the solution to the banded systems. Past efforts at implementing nonlinear compact schemes for parallel simulations suffer from one or more of the following drawbacks: parallelization-induced approximations and errors, complicated and inefficient scheduling of communication and computation, significant increase in the mathematical complexity of the banded systems solver, and high communication overhead. Therefore, these algorithms do not scale well for massively parallel simulations and are inefficient compared with the corresponding standard finite-difference schemes.},
+  author = {Debojyoti Ghosh and Emil M. Constantinescu and Jed Brown}
+}
+@article{ghosh2014efficient,
+  title={Efficient Implementation of Nonlinear Compact Schemes on Massively Parallel Platforms},
+  author = {Debojyoti Ghosh and Emil M. Constantinescu and Jed Brown},
+  journal={\emph{submitted to SISC}},
+  note={Also preprint ANL/MCS-P5121-0414},
+  year = 2014
+}
+@article{brown2014runtime,
+  title={Run-time extensibility and librarization of simulation software},
+  author={Jed Brown and Matthew G. Knepley and Barry F. Smith},
+  journal={\emph{to appear in} IEEE Computing in Science and Engineering},
+  year={2014}
+}
+@conference{may2014ptatin,
+  author={Dave A. May and Jed Brown and Laetitia Le Pourhiet},
+  title={{pTatin3D}: {H}igh-Performance Methods for Long-Term Lithospheric Dynamics},
+  booktitle={Proceedings of SC14: International Conference for High Performance Computing, Networking, Storage and Analysis \emph{(to appear)}},
+  year={2014},
+  organization={ACM}
+}
+@article{knepley2014modularization,
+  author={Jed Brown and Matthew G. Knepley},
+  title={A new modularization for physics simulators},
+  journal={\emph{submitted}},
+  year=2014
+}
+@book{gamma1994design,
+  title={Design patterns: elements of reusable object-oriented software},
+  author={Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John},
+  year={1994},
+  publisher={Pearson Education}
+}
+@book{sutter2000exceptional,
+  title={Exceptional C++: 47 engineering puzzles, programming problems, and solutions},
+  author={Sutter, Herb},
+  year={2000},
+  publisher={Addison-Wesley Professional}
 }
