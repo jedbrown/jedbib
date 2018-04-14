@@ -3816,6 +3816,16 @@ year = 2010,
   year={2007},
   publisher={ACM}
 }
+@article{bangerth2013libraries,
+  title={What makes computational open source software libraries successful?},
+  author={Bangerth, Wolfgang and Heister, Timo},
+  journal={Computational Science \& Discovery},
+  volume={6},
+  number={1},
+  pages={015010},
+  year={2013},
+  publisher={IOP Publishing}
+}
 @book{higham2002accuracy,
   title={{Accuracy and stability of numerical algorithms}},
   author={Higham, N.J.},
@@ -7856,7 +7866,7 @@ year   = {in preparation}}
   note={US Patent 7,100,875}
 }
 @article{larour2012continental,
-  title={Modeling the flow of glaciers in steep terrains: The integrated second-order shallow ice approximation ({iSOSIA})},
+  title={Continental scale, high order, high spatial resolution, ice sheet modeling using the {I}ce {S}heet {S}ystem {M}odel ({ISSM})},
   author={Larour, E. and Seroussi, H. and Morlighem, M. and Rignot, E.},
   journal={Journal of Geophysical Research},
   volume={117},
@@ -8417,14 +8427,6 @@ Computational science},
   year={1981},
   publisher={The Weizmann Institute of Science, Rehovot, Israel}
 }
-@article{spillane2011abstract,
-  title={Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps},
-  author={Spillane, N and Dolean, V and Hauret, P and Nataf, F and Pechstein, C and Scheichl, R},
-  journal={NuMa-Report},
-  volume={7},
-  pages={2007},
-  year={2011}
-}
 @article{pattyn2013marine,
   title={Why marine ice-sheet model predictions may diverge in estimating future sea-level rise},
   author={Pattyn, Frank and Durand, Ga{\"e}l},
@@ -8479,11 +8481,16 @@ Computational science},
   url={http://geodynamics.org/cig/community/workshops/Earthcube13/ExecSummary},
   year={2013}
 }
-@article{may2014scalable,
-  title={A scalable matrix-free {S}tokes discretization for geodynamic applications},
-  author={David A. May and Jed Brown and Laetitia Le Pourhiet},
-  journal={\emph{submitted}},
-  year={2014}
+@article{may2015scalable,
+  title = "A scalable, matrix-free multigrid preconditioner for finite element discretizations of heterogeneous {S}tokes flow ",
+  journal = "Computer Methods in Applied Mechanics and Engineering ",
+  volume = "290",
+  number = "0",
+  pages = "496--523",
+  year = "2015",
+  issn = "0045-7825",
+  doi = "10.1016/j.cma.2015.03.014",
+  author = "David A. May and Jed Brown and Laetitia Le Pourhiet",
 }
 @inproceedings{bui2012extreme,
   title={Extreme-scale UQ for Bayesian inverse problems governed by PDEs},
@@ -8499,6 +8506,26 @@ Computational science},
   booktitle={40th Fluid Dynamics Conference and Exhibit},
   note={AIAA-2010-4731},
   year={2010}
+}
+@article{liao2008textbook,
+  title={Textbook-efficiency multigrid solver for three-dimensional unsteady compressible Navier--Stokes equations},
+  author={Liao, Wei and Diskin, Boris and Peng, Yan and Luo, Li-Shi},
+  journal={Journal of Computational Physics},
+  volume={227},
+  number={15},
+  pages={7160--7177},
+  year={2008},
+  publisher={Elsevier}
+}
+@article{thomas2003textbook,
+  title={Textbook Multigrid Efficiency for Fluid Simulations*},
+  author={Thomas, James L and Diskin, Boris and Brandt, Achi},
+  journal={Annual review of fluid mechanics},
+  volume={35},
+  number={1},
+  pages={317--340},
+  year={2003},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
 }
 @article{brune2013unstructured,
   title={Unstructured geometric multigrid in two and three dimensions on complex and graded meshes},
@@ -8695,14 +8722,6 @@ Computing Systems",
     pages = "494",
     url = "http://stacks.iop.org/1742-6596/46/i=1/a=067",
     year = "2006"
-}
-@inproceedings{jolivet2013scalabledd,
-  title={Scalable domain decomposition preconditioners for heterogeneous elliptic problems},
-  author={Jolivet, Pierre and Hecht, Fr{\'e}d{\'e}ric and Nataf, Fr{\'e}d{\'e}ric and Prud'homme, Christophe},
-  booktitle={Proceedings of SC13: International Conference for High Performance Computing, Networking, Storage and Analysis},
-  pages={80},
-  year={2013},
-  organization={ACM}
 }
 @article{ernst2010stochastic,
   title={Stochastic {G}alerkin matrices},
@@ -8924,23 +8943,39 @@ Computing Systems",
   abstract = {Solutions to hyperbolic conservation laws are often characterized by a large range of length scales as well as discontinuities. Standard nonlinear finite-difference schemes, such as the WENO schemes, yield non- oscillatory solutions but lack the spectral resolution required to model the relevant length scales. Linear compact schemes have a high spectral resolution; however, they suffer from spurious oscillations across discontinuities and sharp gradients. Weighted nonlinear compact schemes, such as the CRWENO scheme and the hybrid compact-WENO schemes, combine the non-oscillatory nature of the WENO schemes with the high spectral resolution of the compact schemes and are thus ideal for solutions with multiple length scales and discontinuities. One example of an application area is compressible, turbulent flows. The CRWENO scheme and the hybrid compact-WENO schemes have a nonlinear, solution-dependent left-hand side and therefore require the solution of banded systems of equations at each time-integration step or stage. Application of these schemes to multiprocessor simulations requires an efficient, scalable algorithm for the solution to the banded systems. Past efforts at implementing nonlinear compact schemes for parallel simulations suffer from one or more of the following drawbacks: parallelization-induced approximations and errors, complicated and inefficient scheduling of communication and computation, significant increase in the mathematical complexity of the banded systems solver, and high communication overhead. Therefore, these algorithms do not scale well for massively parallel simulations and are inefficient compared with the corresponding standard finite-difference schemes.},
   author = {Debojyoti Ghosh and Emil M. Constantinescu and Jed Brown}
 }
-@article{ghosh2014efficient,
+@techreport{cyr2015assembly,
+  title={Algorithms and Abstractions for Assembly in PDE Codes: Workshop Report},
+  author={Cyr, Eric C and Phipps, Eric and Heroux, Michael A and Brown, Jed and Coon, Ethan T and Hoemmen, Mark and Kirby, Robert C and Kolev, Tzanio V and Sutherland, James C and Trott, Christian R},
+  number={SAND2015-1379},
+  institution={Sandia National Laboratory},
+  year=2015
+}
+@article{ghosh2015efficient,
   title={Efficient Implementation of Nonlinear Compact Schemes on Massively Parallel Platforms},
   author = {Debojyoti Ghosh and Emil M. Constantinescu and Jed Brown},
-  journal={\emph{submitted to SISC}},
+  journal={SIAM Journal on Scientific Computing},
+  volume=37,
+  number=3,
+  pages={C354--C383},
+  doi={10.1137/140989261},
   note={Also preprint ANL/MCS-P5121-0414},
-  year = 2014
+  url={http://www.mcs.anl.gov/~emconsta/Repository/Papers/Ghosh_S2014a-preprint.pdf},
+  year = {2015}
 }
-@article{brown2014runtime,
+@article{brown2015runtime,
   title={Run-time extensibility and librarization of simulation software},
-  author={Jed Brown and Matthew G. Knepley and Barry F. Smith},
-  journal={\emph{to appear in} IEEE Computing in Science and Engineering},
-  year={2014}
+  author={Brown, Jed and Knepley, Matthew G and Smith, Barry F},
+  journal={Computing in Science \& Engineering},
+  volume={17},
+  number={1},
+  pages={38--45},
+  year={2015},
+  publisher={IEEE}
 }
 @article{knepley2014modularization,
   author={Jed Brown and Matthew G. Knepley},
   title={A new modularization for physics simulators},
-  journal={\emph{submitted}},
+  journal={submitted to CSD},
   year=2014
 }
 @book{gamma1994design,
@@ -8955,9 +8990,403 @@ Computing Systems",
   year={2000},
   publisher={Addison-Wesley Professional}
 }
-@article{adams2014segmental,
+@article{adams2016segmental,
   title={Segmental Refinement: A Multigrid Technique for Data Locality},
   author={Adams, Mark F and Brown, Jed and Knepley, Matt and Samtaney, Ravi},
-  journal={arXiv preprint arXiv:1406.7808},
+  journal={SIAM Journal on Scientific Computing},
+  volume={38},
+  number=4,
+  pages={C426--C440},
+  note={arXiv:1406.7808},
+  url={http://doi.org/10.1137/140975127},
+  year={2016}
+}
+@misc{FischerBGQAllReduce,
+  author={Paul Fischer},
+  title={Eliminating $\log(P)$ term in {CG}},
+  howpublished={\url{http://www.mcs.anl.gov/~fischer/bgq_all_reduce.png}},
+  year=2012
+}
+@inproceedings{loft2001terascale,
+  title={Terascale spectral element dynamical core for atmospheric general circulation models},
+  author={Loft, Richard D and Thomas, Stephen J and Dennis, John M},
+  booktitle={Supercomputing, ACM/IEEE 2001 Conference},
+  pages={26--26},
+  year={2001},
+  organization={IEEE}
+}
+@inproceedings{tufo1999terascale,
+  title={Terascale spectral element algorithms and implementations},
+  author={Tufo, Henry M and Fischer, Paul F},
+  booktitle={Proceedings of the 1999 ACM/IEEE conference on Supercomputing},
+  pages={68},
+  year={1999},
+  organization={ACM}
+}
+@article{strohmaier2009generalized,
+  title={Generalized utility metrics for supercomputers},
+  author={Strohmaier, Erich},
+  journal={Computer Science-Research and Development},
+  volume={23},
+  number={3-4},
+  pages={185--193},
+  year={2009},
+  publisher={Springer}
+}
+@inproceedings{calotoiu2013using,
+  title={Using automated performance modeling to find scalability bugs in complex codes},
+  author={Calotoiu, Alexandru and Hoefler, Torsten and Poke, Marius and Wolf, Felix},
+  booktitle={Proceedings of SC13: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={45},
+  year={2013},
+  organization={ACM}
+}
+@article{bailey1991parallel,
+  title={The NAS parallel benchmarks},
+  author={Bailey, David H and Barszcz, Eric and Barton, John T and Browning, David S and Carter, Russell L and Dagum, Leonardo and Fatoohi, Rod A and Frederickson, Paul O and Lasinski, Thomas A and Schreiber, Rob S and others},
+  journal={International Journal of High Performance Computing Applications},
+  volume={5},
+  number={3},
+  pages={63--73},
+  year={1991},
+  publisher={SAGE Publications}
+}
+@inproceedings{marjanovic2014hpcg,
+  title={Performance modeling of the HPCG benchmark},
+  author={Marjanovi{\'c}, Vladimir and Gracia, Jos{\'e} and Glass, Colin W},
+  booktitle={Proceedings of the 5th International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems},
+  year=2014,
+  note={\url{http://www.dcs.warwick.ac.uk/~sdh/pmbs14/PMBS14/Workshop_Schedule_files/10-PerformanceModelHPCG.pdf}}
+}
+@misc{komatitsch2015specfem,
+  title={{SPECFEM} User Manual v3.0},
+  author={D. Komatitsch and J. Tromp},
+  howpublished={\url{http://geodynamics.org/cig/software/specfem3d/}},
+  year={2015}
+}
+@inproceedings{carrington2008high,
+  title={High-frequency simulations of global seismic wave propagation using SPECFEM3D\_GLOBE on 62K processors},
+  author={Carrington, Laura and Komatitsch, Dimitri and Laurenzano, Michael and Tikir, Mustafa M and Mich{\'e}a, David and Le Goff, Nicolas and Snavely, Allan and Tromp, Jeroen},
+  booktitle={Proceedings of the 2008 ACM/IEEE conference on Supercomputing},
+  pages={60},
+  year={2008},
+  organization={IEEE Press}
+}
+@misc{homme-website,
+  title={{HOMME}: High-Order Methods Modeling Environment},
+  author={HOMME Developers},
+  howpublished={\url{http://www.homme.ucar.edu/}},
+  year=2015
+}
+@article{chartier2003spectralamge,
+  title={Spectral {AMGe} ($\rho AMGe$)},
+  author={T. Chartier and R.D. Falgout and V.E.Henson and J. Jones and T. Manteuffel and S. McCormick and J. Ruge and P.S. Vassilevski},
+  journal={SIAM Journal on Scientific Computing},
+  volume={25},
+  number={1},
+  pages={1--26},
+  year={2003},
+}
+@article{palmer2014climate,
+  title={Climate forecasting: Build high-resolution global climate models},
+  author={Palmer, Tim},
+  journal={Nature},
+  volume={515},
+  pages={338--339},
   year={2014}
+}
+@article{dongarra2011international,
+  title={The International Exascale Software Project roadmap},
+  author={Jack Dongarra and Pete Beckman and Terry Moore and Patrick Aerts and Giovanni Aloisio and Jean-Claude Andre and David Barkai and Jean-Yves Berthou and Taisuke Boku and Bertrand Braunschweig and Franck Cappello and Barbara Chapman and Xuebin Chi and Alok Choudhary and Sudip Dosanjh and Thom Dunning and Sandro Fiore and Al Geist and Bill Gropp and Robert Harrison and Mark Hereld and Michael Heroux and Adolfy Hoisie and Koh Hotta and Yutaka Ishikawa and Zhong Jin and Fred Johnson and Sanjay Kale and Richard Kenway and David Keyes and Bill Kramer and Jesus Labarta and Alain Lichnewsky and Thomas Lippert and Bob Lucas and Barney Maccabe and Satoshi Matsuoka and Paul Messina and Peter Michielse and Bernd Mohr and Matthias Mueller and Wolfgang Nagel and Hiroshi Nakashima and Michael E. Papka and Dan Reed and Mitsuhisa Sato and Ed Seidel and John Shalf and David Skinner and Marc Snir and Thomas Sterling and Rick Stevens and Fred Streitz and Bob Sugar and Shinji Sumimoto and William Tang and John Taylor and Rajeev Thakur and Anne Trefethen and Mateo Valero and Aad van der Steen and Jeffrey Vetter and Peg Williams and Robert Wisniewski and Kathy Yelick},
+  journal={International Journal of High Performance Computing Applications},
+  volume={25},
+  number={1},
+  pages={3--60},
+  year={2011},
+  publisher={SAGE Publications}
+}
+@book{boyd2004convex,
+  title={Convex optimization},
+  author={Boyd, Stephen and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge University Press}
+}
+@misc{parflow-web-page,
+  title={{ParFlow} Web Site},
+  author={Rob Falgout and Stefan Kollet and Reed Maxwell and Andrew Tompson and Carol Woodward},
+  howpublished={\url{https://computation.llnl.gov/casc/parflow/team.html}},
+  year=2015
+}
+@misc{acme-web-page,
+  title={Accelerated Climate Modeling for Energy},
+  author={DOE},
+  howpublished={\url{http://www.climatemodeling.science.energy.gov/projects/accelerated-climate-modeling-energy}},
+  year=2015
+}
+@article{dongarra2013hpcg,
+  title={Toward a new metric for ranking high performance computing systems},
+  author={Dongarra, Jack and Heroux, Michael A},
+  journal={Sandia Report, SAND2013-4744},
+  volume={312},
+  year={2013}
+}
+@misc{hpgmg-web-page,
+  title={{HPGMG}: High-performance Geometric Multigrid},
+  author={Mark Adams and Jed Brown and John Shalf and Brian van Straalen and Erich Strohmaier and Sam Williams},
+  howpublished={\url{https://hpgmg.org}},
+  year={2016}
+}
+@article{rumsey1996efficiency,
+  title={Efficiency and accuracy of time-accurate turbulent {N}avier-{S}tokes computations},
+  author={Rumsey, Christopher L and Sanetrik, Mark D and Biedron, Robert T and Melson, N Duane and Parlette, Edward B},
+  journal={Computers \& Fluids},
+  volume={25},
+  number={2},
+  pages={217--236},
+  year={1996},
+  publisher={Elsevier}
+}
+@article{thuburn2009numerical,
+  title={Numerical representation of geostrophic modes on arbitrarily structured {C}-grids},
+  author={Thuburn, John and Ringler, Todd D and Skamarock, William C and Klemp, Joseph B},
+  journal={Journal of Computational Physics},
+  volume={228},
+  number={22},
+  pages={8321--8335},
+  year={2009},
+  publisher={Elsevier}
+}
+@article{thuburn2014mimetic,
+  title={A mimetic, semi-implicit, forward-in-time, finite volume shallow water model: comparison of hexagonal--icosahedral and cubed-sphere grids},
+  author={Thuburn, J and Cotter, CJ and Dubos, T},
+  journal={Geoscientific Model Development},
+  volume={7},
+  number={3},
+  pages={909--929},
+  year={2014},
+  publisher={Copernicus GmbH}
+}
+@unpublished{caldwell2013process,
+  author={Peter Caldwell and Bereket Lebassi Habtezion and Hui Wan and Phil Rasch},
+  title={Process Integration/Timestep Sensitivity},
+  note={Slides},
+  year=2013
+}
+@unpublished{brown2015time,
+  author={Jed Brown},
+  title={Time Integration for Atmospheric Physics},
+  note={Presented at SIAM CS\&E},
+  year=2015
+}
+@article{owhadi2015brittleness,
+  title={Brittleness of Bayesian inference under finite information in a continuous world},
+  author={Owhadi, Houman and Scovel, Clint and Sullivan, Tim and others},
+  journal={Electronic Journal of Statistics},
+  volume={9},
+  pages={1--79},
+  year={2015},
+  publisher={Institute of Mathematical Statistics}
+}
+@article{livne2012lean,
+  title={Lean algebraic multigrid (LAMG): Fast graph Laplacian linear solver},
+  author={Livne, Oren E and Brandt, Achi},
+  journal={SIAM Journal on Scientific Computing},
+  volume={34},
+  number={4},
+  pages={B499--B522},
+  year={2012},
+  publisher={SIAM}
+}
+@article{koutis2011combinatorial,
+  title={Combinatorial preconditioners and multilevel solvers for problems in computer vision and image processing},
+  author={Koutis, Ioannis and Miller, Gary L and Tolliver, David},
+  journal={Computer Vision and Image Understanding},
+  volume={115},
+  number={12},
+  pages={1638--1646},
+  year={2011},
+  publisher={Elsevier}
+}
+@InProceedings{duplyakin2016active,
+    author      = "Dmitry Duplyakin and Jed Brown and Robert Ricci",
+    title       = "Active Learning in Performance Analysis",
+    booktitle   = "Proceedings of the IEEE Cluster Conference",
+    year        = 2016,
+    month       = Sep,
+    url         = "http://www.flux.utah.edu/paper/duplyakin-cluster16",
+    pdf         = {https://jedbrown.org/files/DuplyakinBrownRicci-ActiveLearningPerformanceAnalysis-2016.pdf}
+}
+@misc{brown2016standards,
+  title = {Higher Standards on the Control of Numerical Accuracy},
+  author = {Jed Brown},
+  pdf = {https://jedbrown.org/files/Brown-HigherStandardsNumericalAccuracy-2015.pdf},
+  note = {Whitepaper accepted to the DOE Advancing X-cutting Ideas for Computational Climate Science (AXICCS)},
+  year = 2016
+}
+@misc{scikit-learn,
+    title={scikit-learn - Machine Learning in Python},
+    url={http://scikit-learn.org},
+    urldate={2016-05-13},
+}
+@misc{scikit-learn-GP,
+    title={scikit-learn-0.18.dev0 - Gaussian Processes},
+    url={http://scikit-learn.org/dev/modules/gaussian_process.html},
+    urldate={2016-05-13},
+}
+@inproceedings{turk2013scaling,
+  title={Scaling a code in the human dimension},
+  author={Turk, Matthew J},
+  booktitle={Proceedings of the Conference on Extreme Science and Engineering Discovery Environment: Gateway to Discovery},
+  pages={69},
+  year={2013},
+  organization={ACM}
+}
+@article{haber2010numerical,
+  title={Numerical methods for the design of large-scale nonlinear discrete ill-posed inverse problems},
+  author={Haber, Eldad and Horesh, Lior and Tenorio, Luis},
+  journal={Inverse Problems},
+  volume={26},
+  pages={1--14},
+  year={2010},
+  publisher={IOP Publishing}
+}
+@article{haut2016high,
+  title={A high-order time-parallel scheme for solving wave propagation problems via the direct construction of an approximate time-evolution operator},
+  author={Haut, Terry S and Babb, T and Martinsson, PG and Wingate, BA},
+  journal={IMA Journal of Numerical Analysis},
+  volume={36},
+  number={2},
+  pages={688--716},
+  year={2016},
+  publisher={Oxford University Press}
+}
+@misc{ceres-solver,
+  author = "Sameer Agarwal and Keir Mierle and Others",
+  title = "Ceres Solver",
+  howpublished = "\url{http://ceres-solver.org}",
+}
+@article{ramamurthy2017distributed,
+  title={Distributed Bundle Adjustment},
+  author={Ramamurthy, Karthikeyan Natesan and Lin, Chung-Ching and Aravkin, Aleksandr and Pankanti, Sharath and Viguier, Raphael},
+  journal={arXiv preprint arXiv:1708.07954},
+  year={2017}
+}
+@article{chen2008algorithm,
+  title={Algorithm 887: {CHOLMOD}, supernodal sparse {C}holesky factorization and update/downdate},
+  author={Chen, Yanqing and Davis, Timothy A and Hager, William W and Rajamanickam, Sivasankaran},
+  journal={ACM Transactions on Mathematical Software (TOMS)},
+  volume={35},
+  number={3},
+  pages={22},
+  year={2008},
+  publisher={ACM}
+}
+@inproceedings{konolige2018parallel,
+  title={A Parallel Solver for Graph {L}aplacians},
+  author={Tristan Konolige and Jed Brown},
+  booktitle={Proceedings of the Platform for Advanced Scientific Computing},
+  year={2018 (in review)}
+}
+@article{rouet2016distributed,
+  title={A distributed-memory package for dense hierarchically semi-separable matrix computations using randomization},
+  author={Rouet, Fran{\c{c}}ois-Henry and Li, Xiaoye S and Ghysels, Pieter and Napov, Artem},
+  journal={ACM Transactions on Mathematical Software (TOMS)},
+  volume={42},
+  number={4},
+  pages={27},
+  year={2016},
+  publisher={ACM}
+}
+@article{duretz2011discretization,
+  title={Discretization errors and free surface stabilization in the finite difference and marker-in-cell method for applied geodynamics: A numerical study},
+  author={Duretz, Thibault and May, David A and Gerya, Taras V and Tackley, Paul J},
+  journal={Geochemistry, Geophysics, Geosystems},
+  volume={12},
+  number={7},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+@article{duretz2011numerical,
+  title={Numerical modelling of spontaneous slab breakoff and subsequent topographic response},
+  author={Duretz, Thibault and Gerya, Taras V and May, Dave A},
+  journal={Tectonophysics},
+  volume={502},
+  number={1},
+  pages={244--256},
+  year={2011},
+  publisher={Elsevier}
+}
+@article{kaus2010stabilization,
+  title={A stabilization algorithm for geodynamic numerical simulations with a free surface},
+  author={Kaus, Boris JP and M{\"u}hlhaus, Hans and May, Dave A},
+  journal={Physics of the Earth and Planetary Interiors},
+  volume={181},
+  number={1},
+  pages={12--20},
+  year={2010},
+  publisher={Elsevier}
+}
+@article{keller2013numerical,
+  title={Numerical modelling of magma dynamics coupled to tectonic deformation of lithosphere and crust},
+  author={Keller, Tobias and May, Dave A and Kaus, Boris JP},
+  journal={Geophysical Journal International},
+  volume={195},
+  number={3},
+  pages={1406--1442},
+  year={2013},
+  publisher={Oxford University Press}
+}
+@article{yamato2012numerical,
+  title={Numerical modelling of magma transport in dykes},
+  author={Yamato, Philippe and Tartese, Romain and Duretz, Thibault and May, Dave A},
+  journal={Tectonophysics},
+  volume={526},
+  pages={97--109},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{fox2014inversion,
+  title={Inversion of fluvial channels for paleorock uplift rates in Taiwan},
+  author={Fox, Matthew and Goren, Liran and May, Dave A and Willett, Sean D},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={119},
+  number={9},
+  pages={1853--1875},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+@article{fox2014linear,
+  title={A linear inversion method to infer exhumation rates in space and time from thermochronometric data},
+  author={Fox, Matthew and Herman, Fr{\'e}d{\'e}ric and Willett, Sean D and May, Dave A},
+  journal={Earth Surface Dynamics},
+  volume={2},
+  number={1},
+  pages={47},
+  year={2014},
+  publisher={Copernicus GmbH}
+}
+@article{adams2017landau,
+  title={Landau Collision Integral Solver with Adaptive Mesh Refinement on Emerging Architectures},
+  author={Adams, Mark F and Hirvijoki, Eero and Knepley, Matthew G and Brown, Jed and Isaac, Tobin and Mills, Richard},
+  journal={SIAM Journal on Scientific Computing},
+  volume={39},
+  number={6},
+  pages={C452--C465},
+  year={2017},
+  publisher={SIAM},
+  doi={10.1137/17M1118828},
+  archivePrefix={arXiv},
+  eprint={1702.08880}
+}
+@inproceedings{duplyakin2018memory,
+    author      = "Dmitry Duplyakin and Jed Brown and Donna Calhoun",
+    title       = "Evaluating Active Learning with Cost and Memory Awareness",
+    booktitle   = "IPDPS",
+    year        = {2018 (accepted)}
+}
+@article{thomas2018tensor,
+  title={Tensor Field Networks: Rotation-and Translation-Equivariant Neural Networks for 3D Point Clouds},
+  author={Thomas, Nathaniel and Smidt, Tess and Kearnes, Steven and Yang, Lusann and Li, Li and Kohlhoff, Kai and Riley, Patrick},
+  journal={arXiv preprint arXiv:1802.08219},
+  year={2018}
 }
